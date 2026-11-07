@@ -80,6 +80,8 @@ Open het menu via `/gstweaks daily` of de FTB-zijbalk. Iedere speler kan eenmaal
 
 Operators kunnen de status van een online speler bekijken met `/gstweaks daily debug <speler>`. Dat commando kent geen beloning toe. De implementatie is gebaseerd op [GSMod-DailyRewards](https://github.com/steefan1998/GSmod/tree/main/GSMod-DailyRewards). Bij vervanging van de oude mod kan GSTweaks de laatst geclaimde dag uit dezelfde wereld overnemen. Gebruik één Daily Rewards-module per instance.
 
+Met `/gstweaks daily admin timezone` ziet een operator de huidige tijdzone. Met bijvoorbeeld `/gstweaks daily admin timezone Europe/Amsterdam` wordt de tijdzone direct aangepast en opgeslagen.
+
 De serverinstellingen staan in `config/gstweaks/daily-rewards.json`.
 
 | Instelling | Standaard | Functie |

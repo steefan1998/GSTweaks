@@ -1,11 +1,15 @@
 package nl.gstweaks.daily;
 
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonParser;
 import net.minecraft.resources.Identifier;
 import net.neoforged.fml.loading.FMLPaths;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.AtomicMoveNotSupportedException;
+import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 import java.time.ZoneId;
 import java.util.List;
@@ -21,7 +25,7 @@ final class DailyConfig {
     List<Reward> rewards = List.of(new Reward("minecraft:gold_ingot", 2), new Reward("minecraft:bread", 4));
 
     static DailyConfig load() {
-        var path = FMLPaths.CONFIGDIR.get().resolve("gstweaks/daily-rewards.json");
+        var path = path();
         var gson = new GsonBuilder().setPrettyPrinting().create();
         try {
             if (Files.notExists(path)) {
@@ -51,5 +55,28 @@ final class DailyConfig {
 
     ZoneId zone() {
         return ZoneId.of(timeZone);
+    }
+
+    void setZone(ZoneId zone) throws IOException {
+        var path = path();
+        var json = JsonParser.parseString(Files.readString(path)).getAsJsonObject();
+        json.addProperty("timeZone", zone.getId());
+        var temporary = Files.createTempFile(path.getParent(), "daily-rewards-", ".tmp");
+        try {
+            Files.writeString(temporary, new GsonBuilder().setPrettyPrinting().create().toJson(json)
+                    + System.lineSeparator());
+            try {
+                Files.move(temporary, path, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING);
+            } catch (AtomicMoveNotSupportedException exception) {
+                Files.move(temporary, path, StandardCopyOption.REPLACE_EXISTING);
+            }
+            timeZone = zone.getId();
+        } finally {
+            Files.deleteIfExists(temporary);
+        }
+    }
+
+    private static Path path() {
+        return FMLPaths.CONFIGDIR.get().resolve("gstweaks/daily-rewards.json");
     }
 }

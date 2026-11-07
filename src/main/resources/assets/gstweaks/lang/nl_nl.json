@@ -9,5 +9,9 @@
   "daily.gstweaks.reset": "Nieuwe dag over %s (%s)",
   "daily.gstweaks.success": "Dagelijkse beloning geclaimd.",
   "daily.gstweaks.no_rewards": "Er zijn geen beloningen beschikbaar. Neem contact op met de serverbeheerder.",
-  "sidebar_button.gstweaks.daily_rewards": "Dagelijkse beloningen"
+  "sidebar_button.gstweaks.daily_rewards": "Dagelijkse beloningen",
+  "daily.gstweaks.timezone_current": "Tijdzone van Daily Rewards: %s",
+  "daily.gstweaks.timezone_updated": "Tijdzone van Daily Rewards ingesteld op %s.",
+  "daily.gstweaks.timezone_invalid": "Onbekende tijdzone: %s. Gebruik een IANA-naam zoals Europe/Amsterdam.",
+  "daily.gstweaks.timezone_error": "De tijdzone kon niet worden opgeslagen. Zie het serverlogboek."
 }

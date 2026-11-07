@@ -54,5 +54,9 @@
   "daily.gstweaks.reset": "Next reset in %s (%s)",
   "daily.gstweaks.success": "Daily reward claimed.",
   "daily.gstweaks.no_rewards": "No rewards are available. Contact the server administrator.",
-  "sidebar_button.gstweaks.daily_rewards": "Daily Rewards"
+  "sidebar_button.gstweaks.daily_rewards": "Daily Rewards",
+  "daily.gstweaks.timezone_current": "Daily Rewards time zone: %s",
+  "daily.gstweaks.timezone_updated": "Daily Rewards time zone set to %s.",
+  "daily.gstweaks.timezone_invalid": "Unknown time zone: %s. Use an IANA name such as Europe/Amsterdam.",
+  "daily.gstweaks.timezone_error": "Could not save the Daily Rewards time zone. See the server log."
 }

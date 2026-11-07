@@ -1,9 +1,13 @@
 package nl.gstweaks.daily;
 
+import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.logging.LogUtils;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.commands.Commands;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.SharedSuggestionProvider;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -24,9 +28,12 @@ import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
+import java.io.IOException;
+import java.time.DateTimeException;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -83,6 +90,19 @@ public final class DailyRewards {
                         .executes(context -> sendStatus(context.getSource().getPlayerOrException(), false)))
                 .then(Commands.literal("claim")
                         .executes(context -> claim(context.getSource().getPlayerOrException())));
+        daily.then(Commands.literal("admin")
+                .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
+                .then(Commands.literal("timezone")
+                        .executes(context -> {
+                            context.getSource().sendSuccess(() -> Component.translatable(
+                                    "daily.gstweaks.timezone_current", config.timeZone), false);
+                            return 1;
+                        })
+                        .then(Commands.argument("zone", StringArgumentType.greedyString())
+                                .suggests((context, builder) -> SharedSuggestionProvider.suggest(
+                                        ZoneId.getAvailableZoneIds(), builder))
+                                .executes(context -> setZone(context.getSource(),
+                                        StringArgumentType.getString(context, "zone").trim())))));
         daily.then(Commands.literal("debug")
                 .requires(Commands.hasPermission(Commands.LEVEL_GAMEMASTERS))
                 .then(Commands.argument("player", EntityArgument.player()).executes(context -> {
@@ -96,6 +116,22 @@ public final class DailyRewards {
                     return 1;
                 })));
         event.getDispatcher().register(Commands.literal("gstweaks").then(daily));
+    }
+
+    private int setZone(CommandSourceStack source, String name) {
+        try {
+            config.setZone(ZoneId.of(name));
+        } catch (DateTimeException exception) {
+            source.sendFailure(Component.translatable("daily.gstweaks.timezone_invalid", name));
+            return 0;
+        } catch (IOException | com.google.gson.JsonParseException | IllegalStateException exception) {
+            LogUtils.getLogger().warn("Could not update the GSTweaks Daily Rewards time zone", exception);
+            source.sendFailure(Component.translatable("daily.gstweaks.timezone_error"));
+            return 0;
+        }
+        online.clear();
+        source.sendSuccess(() -> Component.translatable("daily.gstweaks.timezone_updated", config.timeZone), true);
+        return 1;
     }
 
     private void onLogin(PlayerEvent.PlayerLoggedInEvent event) {
