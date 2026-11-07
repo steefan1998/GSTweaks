@@ -1,0 +1,42 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = '0.2.0'
+group = 'nl.gstweaks'
+base.archivesName = 'GSTweaks'
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+neoForge {
+    version = '26.1.2.122'
+    runs {
+        client { client() }
+        server {
+            server()
+            programArgument '--nogui'
+        }
+    }
+    mods {
+        gstweaks { sourceSet(sourceSets.main) }
+    }
+}
+
+def compatJars = providers.gradleProperty('packMods').map { directory ->
+    fileTree(directory) {
+        include 'allthemodium-*.jar', 'stellaris-*.jar', 'architectury-*.jar', 'potentials-*.jar',
+                'jei-*.jar', 'thaumaturge-*.jar'
+    }
+}
+dependencies {
+    compileOnly files(compatJars)
+}
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+tasks.named('processResources', ProcessResources) {
+    from('migration') {
+        include 'files.json', 'kubejs/**'
+        into 'migration'
+    }
+}

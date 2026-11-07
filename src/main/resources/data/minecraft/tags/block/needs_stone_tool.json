@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "gspack:mars_copper_ore",
+    "gspack:mars_iron_ore"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ],
+  "type": "neoforge:add_features",
+  "biomes": [],
+  "features": [],
+  "step": "underground_ores"
+}

@@ -1,0 +1,1348 @@
+{
+  "values": {
+    "#c:dusts/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/cinnabar": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/copper": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/diamond": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/fluorite": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/gold": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/iron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/netherite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/peridot": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/ruby": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/salt": [
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/sapphire": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/sulfur": [
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:dusts/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:gems/cinnabar": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:gems/fluorite": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:gems/peridot": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:gems/ruby": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:gems/sapphire": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ingots/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:nuggets/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:nuggets/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 1
+      }
+    ],
+    "#c:ores/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/cinnabar": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/fluorite": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/peridot": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/ruby": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/salt": [
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/sapphire": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/sulfur": [
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:ores/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:raw_materials/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:storage_blocks/aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/brass": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/bronze": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/cinnabar": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/constantan": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/electrum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/enderium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/fluorite": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/invar": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/lumium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/netherite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/peridot": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_aluminum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_copper": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_gold": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_iridium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_iron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_lead": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_nickel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_osmium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_platinum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/raw_zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/ruby": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/salt": [
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/sapphire": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/signalum": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/silver": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/steel": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/sulfur": [
+      {
+        "aspect": "thaumaturge:ignis",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/tin": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/uranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:storage_blocks/zinc": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 27
+      }
+    ],
+    "#c:ores/boron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/boron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/boron": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/chromium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/chromium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/chromium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/desh": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/desh": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/desh": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/hellforged": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/hellforged": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/hellforged": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/iesnium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/iesnium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/iesnium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/naquadah": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/naquadah": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/naquadah": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/niobium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/niobium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/niobium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/novite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/novite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/novite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/titanium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/titanium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/titanium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/uraninite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/uraninite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/uraninite": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/vibranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/vibranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/vibranium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/unobtainium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/unobtainium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/unobtainium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/allthemodium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/allthemodium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/allthemodium": [
+      {
+        "aspect": "thaumaturge:metallum",
+        "amount": 3
+      }
+    ],
+    "#c:ores/amber": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/amber": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/amber": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ],
+    "#c:ores/dark_gem": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 3
+      }
+    ],
+    "#c:raw_materials/dark_gem": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      },
+      {
+        "aspect": "thaumaturge:terra",
+        "amount": 1
+      }
+    ],
+    "#c:ingots/dark_gem": [
+      {
+        "aspect": "thaumaturge:vitreus",
+        "amount": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "daily.gstweaks.title": "Dagelijkse beloningen",
+  "daily.gstweaks.claim": "Claim beloning",
+  "daily.gstweaks.ready": "Je dagelijkse beloning staat klaar.",
+  "daily.gstweaks.claimed": "Je hebt vandaag al geclaimd.",
+  "daily.gstweaks.waiting": "Speel verder om je dagelijkse beloning vrij te spelen.",
+  "daily.gstweaks.disabled": "Dagelijkse beloningen staan uit.",
+  "daily.gstweaks.playtime": "Vandaag online: %s / %s",
+  "daily.gstweaks.reset": "Nieuwe dag over %s (%s)",
+  "daily.gstweaks.success": "Dagelijkse beloning geclaimd.",
+  "daily.gstweaks.no_rewards": "Er zijn geen beloningen beschikbaar. Neem contact op met de serverbeheerder.",
+  "sidebar_button.gstweaks.daily_rewards": "Dagelijkse beloningen"
+}

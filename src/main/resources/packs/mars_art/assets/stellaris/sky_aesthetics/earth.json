@@ -1,0 +1,53 @@
+{
+  "world": "minecraft:overworld",
+  "id": "stellaris:earth",
+  "weather": true,
+  "cloud_settings": {
+    "cloud": true
+  },
+  "stars": {
+    "vanilla": false,
+    "moving_stars": true,
+    "count": 4000,
+    "all_days_visible": false,
+    "scale": 0.2,
+    "color": [
+      200,
+      215,
+      255
+    ],
+    "shooting_stars": {
+      "percentage": 2,
+      "random_lifetime": [
+        60,
+        120
+      ],
+      "scale": 1.2,
+      "speed": 1.5,
+      "color": [
+        1.0,
+        1.0,
+        0.78
+      ]
+    }
+  },
+  "sky_objects": [
+    {
+      "rotation_type": "NIGHT",
+      "texture": "stellaris:mars",
+      "object_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        132.0,
+        24.0
+      ],
+      "size": 0.15,
+      "blend": true,
+      "height": 100
+    }
+  ]
+}

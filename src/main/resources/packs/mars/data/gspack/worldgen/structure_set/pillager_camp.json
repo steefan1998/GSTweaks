@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "gspack:pillager_camp",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 16,
+    "salt": 71008422
+  }
+}

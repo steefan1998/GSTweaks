@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#gspack:mars_biomes",
+  "features": [
+    "gspack:mars_osmium",
+    "gspack:mars_uranium"
+  ],
+  "step": "underground_ores"
+}

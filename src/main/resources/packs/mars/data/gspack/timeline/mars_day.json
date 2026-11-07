@@ -1,0 +1,489 @@
+{
+  "clock": "gspack:mars",
+  "period_ticks": 24660,
+  "time_markers": {
+    "minecraft:day": {
+      "show_in_commands": true,
+      "ticks": 1028
+    },
+    "minecraft:midnight": {
+      "show_in_commands": true,
+      "ticks": 18495
+    },
+    "minecraft:night": {
+      "show_in_commands": true,
+      "ticks": 13358
+    },
+    "minecraft:noon": {
+      "show_in_commands": true,
+      "ticks": 6165
+    },
+    "minecraft:roll_village_siege": 18000,
+    "minecraft:wake_up_from_sleep": 0
+  },
+  "tracks": {
+    "minecraft:audio/firefly_bush_sounds": {
+      "keyframes": [
+        {
+          "ticks": 12947,
+          "value": true
+        },
+        {
+          "ticks": 24045,
+          "value": false
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/bees_stay_in_hive": {
+      "keyframes": [
+        {
+          "ticks": 12887,
+          "value": true
+        },
+        {
+          "ticks": 24105,
+          "value": false
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/cat_waking_up_gift_chance": {
+      "ease": "constant",
+      "keyframes": [
+        {
+          "ticks": 372,
+          "value": 0
+        },
+        {
+          "ticks": 24318,
+          "value": 0.7
+        }
+      ],
+      "modifier": "maximum"
+    },
+    "minecraft:gameplay/creaking_active": {
+      "keyframes": [
+        {
+          "ticks": 12947,
+          "value": true
+        },
+        {
+          "ticks": 24045,
+          "value": false
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/eyeblossom_open": {
+      "keyframes": [
+        {
+          "ticks": 12947,
+          "value": true
+        },
+        {
+          "ticks": 24045,
+          "value": false
+        }
+      ]
+    },
+    "minecraft:gameplay/monsters_burn": {
+      "keyframes": [
+        {
+          "ticks": 12887,
+          "value": false
+        },
+        {
+          "ticks": 24105,
+          "value": true
+        }
+      ],
+      "modifier": "or"
+    },
+    "minecraft:gameplay/sky_light_level": {
+      "keyframes": [
+        {
+          "ticks": 137,
+          "value": 1
+        },
+        {
+          "ticks": 12193,
+          "value": 1
+        },
+        {
+          "ticks": 14046,
+          "value": 0.26666668
+        },
+        {
+          "ticks": 22944,
+          "value": 0.26666668
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:gameplay/turtle_egg_hatch_chance": {
+      "ease": "constant",
+      "keyframes": [
+        {
+          "ticks": 21641,
+          "value": 1
+        },
+        {
+          "ticks": 22507,
+          "value": 0.002
+        }
+      ],
+      "modifier": "maximum"
+    },
+    "minecraft:visual/cloud_color": {
+      "keyframes": [
+        {
+          "ticks": 137,
+          "value": -1
+        },
+        {
+          "ticks": 12193,
+          "value": -1
+        },
+        {
+          "ticks": 14046,
+          "value": -15132378
+        },
+        {
+          "ticks": 22944,
+          "value": -15132378
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/fog_color": {
+      "keyframes": [
+        {
+          "ticks": 137,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 12193,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 14046,
+          "value": "#0f0f16"
+        },
+        {
+          "ticks": 22944,
+          "value": "#0f0f16"
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/moon_angle": {
+      "ease": {
+        "cubic_bezier": [
+          0.362,
+          0.241,
+          0.638,
+          0.759
+        ]
+      },
+      "keyframes": [
+        {
+          "ticks": 6165,
+          "value": 540
+        },
+        {
+          "ticks": 6165,
+          "value": 180
+        }
+      ]
+    },
+    "minecraft:visual/sky_color": {
+      "keyframes": [
+        {
+          "ticks": 137,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 12193,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 14046,
+          "value": "#000000"
+        },
+        {
+          "ticks": 22944,
+          "value": "#000000"
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/sky_light_color": {
+      "keyframes": [
+        {
+          "ticks": 750,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 11580,
+          "value": "#ffffff"
+        },
+        {
+          "ticks": 13501,
+          "value": "#7a7aff"
+        },
+        {
+          "ticks": 23489,
+          "value": "#7a7aff"
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/sky_light_factor": {
+      "keyframes": [
+        {
+          "ticks": 750,
+          "value": 1
+        },
+        {
+          "ticks": 11580,
+          "value": 1
+        },
+        {
+          "ticks": 13501,
+          "value": 0.24
+        },
+        {
+          "ticks": 23489,
+          "value": 0.24
+        }
+      ],
+      "modifier": "multiply"
+    },
+    "minecraft:visual/star_angle": {
+      "ease": {
+        "cubic_bezier": [
+          0.362,
+          0.241,
+          0.638,
+          0.759
+        ]
+      },
+      "keyframes": [
+        {
+          "ticks": 6165,
+          "value": 360
+        },
+        {
+          "ticks": 6165,
+          "value": 0
+        }
+      ]
+    },
+    "minecraft:visual/star_brightness": {
+      "keyframes": [
+        {
+          "ticks": 95,
+          "value": 0.037
+        },
+        {
+          "ticks": 644,
+          "value": 0
+        },
+        {
+          "ticks": 11686,
+          "value": 0
+        },
+        {
+          "ticks": 12055,
+          "value": 0.016
+        },
+        {
+          "ticks": 12288,
+          "value": 0.044
+        },
+        {
+          "ticks": 12740,
+          "value": 0.143
+        },
+        {
+          "ticks": 13079,
+          "value": 0.258
+        },
+        {
+          "ticks": 13592,
+          "value": 0.5
+        },
+        {
+          "ticks": 23398,
+          "value": 0.5
+        },
+        {
+          "ticks": 23665,
+          "value": 0.364
+        },
+        {
+          "ticks": 23998,
+          "value": 0.225
+        },
+        {
+          "ticks": 24411,
+          "value": 0.101
+        }
+      ],
+      "modifier": "maximum"
+    },
+    "minecraft:visual/sun_angle": {
+      "ease": {
+        "cubic_bezier": [
+          0.362,
+          0.241,
+          0.638,
+          0.759
+        ]
+      },
+      "keyframes": [
+        {
+          "ticks": 6165,
+          "value": 360
+        },
+        {
+          "ticks": 6165,
+          "value": 0
+        }
+      ]
+    },
+    "minecraft:visual/sunrise_sunset_color": {
+      "keyframes": [
+        {
+          "ticks": 73,
+          "value": "#5fefa333"
+        },
+        {
+          "ticks": 319,
+          "value": "#29f5ba33"
+        },
+        {
+          "ticks": 581,
+          "value": "#06fbd433"
+        },
+        {
+          "ticks": 750,
+          "value": "#00ffe533"
+        },
+        {
+          "ticks": 11580,
+          "value": "#00ffe533"
+        },
+        {
+          "ticks": 11710,
+          "value": "#04fcd833"
+        },
+        {
+          "ticks": 11839,
+          "value": "#0ff9cb33"
+        },
+        {
+          "ticks": 12011,
+          "value": "#29f5ba33"
+        },
+        {
+          "ticks": 12257,
+          "value": "#5fefa333"
+        },
+        {
+          "ticks": 12580,
+          "value": "#b1e78733"
+        },
+        {
+          "ticks": 12698,
+          "value": "#cce47e33"
+        },
+        {
+          "ticks": 12856,
+          "value": "#e9e07233"
+        },
+        {
+          "ticks": 12960,
+          "value": "#f6dd6b33"
+        },
+        {
+          "ticks": 13082,
+          "value": "#feda6333"
+        },
+        {
+          "ticks": 13194,
+          "value": "#fed75c33"
+        },
+        {
+          "ticks": 13393,
+          "value": "#ecd25133"
+        },
+        {
+          "ticks": 13616,
+          "value": "#c1cc4733"
+        },
+        {
+          "ticks": 14154,
+          "value": "#36be3733"
+        },
+        {
+          "ticks": 14270,
+          "value": "#1fbb3533"
+        },
+        {
+          "ticks": 14425,
+          "value": "#09b73333"
+        },
+        {
+          "ticks": 14582,
+          "value": "#00b33333"
+        },
+        {
+          "ticks": 22407,
+          "value": "#00b23333"
+        },
+        {
+          "ticks": 22565,
+          "value": "#09b73333"
+        },
+        {
+          "ticks": 22720,
+          "value": "#1fbb3533"
+        },
+        {
+          "ticks": 22836,
+          "value": "#36be3733"
+        },
+        {
+          "ticks": 23374,
+          "value": "#c1cc4733"
+        },
+        {
+          "ticks": 23597,
+          "value": "#ecd25133"
+        },
+        {
+          "ticks": 23796,
+          "value": "#fed75c33"
+        },
+        {
+          "ticks": 23912,
+          "value": "#feda6333"
+        },
+        {
+          "ticks": 24134,
+          "value": "#e9e07233"
+        },
+        {
+          "ticks": 24292,
+          "value": "#cce47e33"
+        },
+        {
+          "ticks": 24410,
+          "value": "#b1e78733"
+        }
+      ]
+    }
+  }
+}

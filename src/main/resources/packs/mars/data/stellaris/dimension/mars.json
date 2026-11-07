@@ -1,0 +1,192 @@
+{
+  "type": "gspack:mars",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "gspack:mars",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "gspack:mars_frozen_wastes",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -1,
+              -0.55
+            ],
+            "humidity": [
+              -1,
+              1
+            ]
+          }
+        },
+        {
+          "biome": "gspack:mars",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -0.55,
+              1
+            ],
+            "humidity": [
+              -1,
+              -0.65
+            ]
+          }
+        },
+        {
+          "biome": "gspack:mars_colony_flats",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -0.55,
+              1
+            ],
+            "humidity": [
+              -0.65,
+              -0.45
+            ]
+          }
+        },
+        {
+          "biome": "gspack:mars",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -0.55,
+              1
+            ],
+            "humidity": [
+              -0.45,
+              0.55
+            ]
+          }
+        },
+        {
+          "biome": "gspack:mars_dome_fields",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -0.55,
+              1
+            ],
+            "humidity": [
+              0.55,
+              0.72
+            ]
+          }
+        },
+        {
+          "biome": "gspack:mars",
+          "parameters": {
+            "continentalness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -1,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "offset": 0,
+            "weirdness": [
+              -1,
+              1
+            ],
+            "temperature": [
+              -0.55,
+              1
+            ],
+            "humidity": [
+              0.72,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

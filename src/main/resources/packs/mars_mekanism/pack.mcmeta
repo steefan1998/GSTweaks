@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "GSTweaks mars_mekanism",
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": [
+      101,
+      1
+    ]
+  }
+}

@@ -1,0 +1,359 @@
+[
+  {
+    "name": "amber",
+    "mods": [
+      "thaumaturge"
+    ],
+    "productTag": "c:gems/amber",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 15836211,
+    "toolMaterial": true
+  },
+  {
+    "name": "black_quartz",
+    "mods": [
+      "occultism"
+    ],
+    "productTag": "c:gems/black_quartz",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 5392731,
+    "toolMaterial": true
+  },
+  {
+    "name": "boron",
+    "mods": [
+      "colossal_reactors"
+    ],
+    "productTag": "c:ingots/boron",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 750,
+    "color": 10325112,
+    "toolMaterial": true
+  },
+  {
+    "name": "californium",
+    "mods": [
+      "colossal_reactors"
+    ],
+    "productTag": "c:gems/californium",
+    "fallbackItem": "colossal_reactors:californium_crystals",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 7528033
+  },
+  {
+    "name": "cinnabar",
+    "mods": [
+      "alltheores",
+      "thaumaturge"
+    ],
+    "productTag": "c:gems/cinnabar",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 15289670
+  },
+  {
+    "name": "dark_gem",
+    "mods": [
+      "evilcraft",
+      "occultism"
+    ],
+    "productTag": "c:gems/dark_gem",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 4800856,
+    "toolMaterial": true
+  },
+  {
+    "name": "desh",
+    "mods": [
+      "stellaris"
+    ],
+    "productTag": "c:ingots/desh",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 725,
+    "color": 14914901,
+    "toolMaterial": true
+  },
+  {
+    "name": "dimensional_shard",
+    "mods": [
+      "rftoolsbase"
+    ],
+    "productTag": "c:gems/dimensional_shard",
+    "fallbackItem": "rftoolsbase:dimensionalshard",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 7726532
+  },
+  {
+    "name": "fluorite",
+    "mods": [
+      "alltheores",
+      "mekanism"
+    ],
+    "productTag": "c:gems/fluorite",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 12026609,
+    "toolMaterial": true
+  },
+  {
+    "name": "hellforged",
+    "mods": [
+      "neovitae"
+    ],
+    "productTag": "c:ingots/hellforged",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 1100,
+    "color": 14963504,
+    "toolMaterial": true
+  },
+  {
+    "name": "iesnium",
+    "mods": [
+      "occultism"
+    ],
+    "productTag": "c:ingots/iesnium",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 875,
+    "color": 6993358,
+    "toolMaterial": true
+  },
+  {
+    "name": "inferium",
+    "mods": [
+      "mysticalagriculture",
+      "mysticalagradditions"
+    ],
+    "productTag": "c:gems/inferium",
+    "fallbackItem": "mysticalagriculture:inferium_essence",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 9088069
+  },
+  {
+    "name": "iridium",
+    "mods": [
+      "alltheores"
+    ],
+    "productTag": "c:ingots/iridium",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 950,
+    "color": 13952245,
+    "toolMaterial": true
+  },
+  {
+    "name": "naquadah",
+    "mods": [
+      "mekanism_extras"
+    ],
+    "productTag": "c:ingots/naquadah",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 1200,
+    "color": 4352844,
+    "toolMaterial": true
+  },
+  {
+    "name": "niobium",
+    "mods": [
+      "ltxi"
+    ],
+    "productTag": "c:ingots/niobium",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 850,
+    "color": 9740491,
+    "toolMaterial": true
+  },
+  {
+    "name": "novite",
+    "mods": [
+      "stellaris"
+    ],
+    "productTag": "c:ingots/novite",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 975,
+    "color": 9559273,
+    "toolMaterial": true
+  },
+  {
+    "name": "peridot",
+    "mods": [
+      "alltheores"
+    ],
+    "productTag": "c:gems/peridot",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 9557579,
+    "toolMaterial": true
+  },
+  {
+    "name": "prosperity",
+    "mods": [
+      "mysticalagriculture",
+      "mysticalagradditions"
+    ],
+    "productTag": "c:gems/prosperity",
+    "fallbackItem": "mysticalagriculture:prosperity_shard",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 12708320
+  },
+  {
+    "name": "replica",
+    "mods": [
+      "replication"
+    ],
+    "productTag": "c:ingots/replica",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 750,
+    "color": 9532621,
+    "toolMaterial": true
+  },
+  {
+    "name": "ruby",
+    "mods": [
+      "alltheores"
+    ],
+    "productTag": "c:gems/ruby",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 15351648,
+    "toolMaterial": true
+  },
+  {
+    "name": "salt",
+    "mods": [
+      "alltheores"
+    ],
+    "productTag": "c:dusts/salt",
+    "fallbackItem": "alltheores:salt_dust",
+    "cast": "",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 650,
+    "color": 15390410
+  },
+  {
+    "name": "saltpeter",
+    "mods": [
+      "railcraft"
+    ],
+    "productTag": "c:dusts/saltpeter",
+    "fallbackItem": "railcraft:saltpeter_dust",
+    "cast": "",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 650,
+    "color": 14801070
+  },
+  {
+    "name": "sapphire",
+    "mods": [
+      "alltheores"
+    ],
+    "productTag": "c:gems/sapphire",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 800,
+    "color": 4682989,
+    "toolMaterial": true
+  },
+  {
+    "name": "soulium",
+    "mods": [
+      "mysticalagriculture"
+    ],
+    "productTag": "c:ingots/soulium",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 800,
+    "color": 7690573,
+    "toolMaterial": true
+  },
+  {
+    "name": "sulfur",
+    "mods": [
+      "alltheores",
+      "railcraft"
+    ],
+    "productTag": "c:dusts/sulfur",
+    "fallbackItem": "alltheores:sulfur_dust",
+    "cast": "",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 650,
+    "color": 15125318
+  },
+  {
+    "name": "titanium",
+    "mods": [
+      "ltxi",
+      "stellaris"
+    ],
+    "productTag": "c:ingots/titanium",
+    "cast": "ingot",
+    "amount": 90,
+    "oreAmount": 180,
+    "temperature": 925,
+    "color": 12102083,
+    "toolMaterial": true
+  },
+  {
+    "name": "uraninite",
+    "mods": [
+      "powah"
+    ],
+    "productTag": "c:dusts/uraninite",
+    "fallbackItem": "powah:uraninite",
+    "cast": "",
+    "amount": 100,
+    "oreAmount": 100,
+    "temperature": 650,
+    "color": 9089115
+  }
+]

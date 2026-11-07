@@ -1,0 +1,42 @@
+{
+  "world": "stellaris:mars",
+  "id": "gspack:mars",
+  "weather": false,
+  "cloud_settings": { "cloud": false },
+  "fog_settings": { "fog": true },
+  "sky_color": {
+    "sky_color": [0.52, 0.28, 0.18, 1.0],
+    "sunset_color": [0.35, 0.42, 0.62],
+    "sunset_alpha_modifier": 0.65
+  },
+  "sun": { "size": 19.5, "intensity": 0.8 },
+  "moon": { "show": false },
+  "stars": {
+    "vanilla": false,
+    "moving_stars": true,
+    "count": 4000,
+    "all_days_visible": false,
+    "scale": 0.12,
+    "color": [220, 225, 240]
+  },
+  "sky_objects": [
+    {
+      "texture": "gspack:phobos",
+      "blend": false,
+      "size": 2.4,
+      "rotation": [0.0, 24.0, 18.0],
+      "object_rotation": [0.0, 0.0, 15.0],
+      "height": 100,
+      "rotation_type": "NIGHT"
+    },
+    {
+      "texture": "gspack:deimos",
+      "blend": false,
+      "size": 0.9,
+      "rotation": [0.0, 72.0, -26.0],
+      "object_rotation": [0.0, 0.0, -12.0],
+      "height": 100,
+      "rotation_type": "NIGHT"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "gspack:mars",
+      "required": false
+    },
+    {
+      "id": "gspack:mars_colony_flats",
+      "required": false
+    },
+    {
+      "id": "gspack:mars_dome_fields",
+      "required": false
+    },
+    {
+      "id": "gspack:mars_frozen_wastes",
+      "required": false
+    }
+  ]
+}

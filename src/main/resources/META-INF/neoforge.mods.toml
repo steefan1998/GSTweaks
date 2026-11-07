@@ -1,0 +1,47 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="gstweaks"
+version="0.2.0"
+displayName="GSTweaks"
+authors="Steef_an & ChatGPT Codex"
+logoFile="gspack-logo.png"
+logoBlur=false
+description="GSPack progression items, Trophy of Infinity and optional Mars expansion."
+
+[[dependencies.gstweaks]]
+modId="minecraft"
+type="required"
+versionRange="[26.1.2]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.gstweaks]]
+modId="neoforge"
+type="required"
+versionRange="[26.1.2.122,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.gstweaks]]
+modId="allthemodium"
+type="optional"
+versionRange="[4.3.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.gstweaks]]
+modId="stellaris"
+type="optional"
+versionRange="[2.0.10,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.gstweaks]]
+modId="kubejs"
+type="optional"
+versionRange="[0,)"
+ordering="BEFORE"
+side="BOTH"

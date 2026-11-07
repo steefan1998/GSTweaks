@@ -1,0 +1,6 @@
+{
+  "icon": ["minecraft:textures/item/clock_00.png"],
+  "sort_index": 350,
+  "click": ["command:/gstweaks daily"],
+  "requires_op": false
+}

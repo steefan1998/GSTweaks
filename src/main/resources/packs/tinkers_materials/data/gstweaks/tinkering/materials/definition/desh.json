@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "stellaris"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/desh"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ingots/desh"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 2
+}

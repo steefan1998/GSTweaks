@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "GSTweaks Tinkers tool materials",
+    "min_format": [
+      101,
+      1
+    ],
+    "max_format": [
+      101,
+      1
+    ]
+  }
+}

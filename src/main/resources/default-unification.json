@@ -1,0 +1,1139 @@
+{
+  "enabled": true,
+  "overrideOreData": true,
+  "groups": [
+    {
+      "tag": "c:silicon",
+      "items": [
+        "ae2:silicon",
+        "enderio:silicon",
+        "oritech:silicon",
+        "stellaris:silicon"
+      ]
+    },
+    {
+      "tag": "c:dusts/bronze",
+      "items": [
+        "alltheores:bronze_dust",
+        "mekanism:dust_bronze"
+      ]
+    },
+    {
+      "tag": "c:dusts/charcoal",
+      "items": [
+        "mekanism:dust_charcoal",
+        "railcraft:charcoal_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/coal",
+      "items": [
+        "mekanism:dust_coal",
+        "enderio:powdered_coal",
+        "oritech:coal_dust",
+        "railcraft:coal_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/copper",
+      "items": [
+        "alltheores:copper_dust",
+        "enderio:powdered_copper",
+        "mekanism:dust_copper",
+        "occultism:copper_dust",
+        "oritech:copper_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/diamond",
+      "items": [
+        "alltheores:diamond_dust",
+        "appflux:diamond_dust",
+        "mekanism:dust_diamond"
+      ]
+    },
+    {
+      "tag": "c:dusts/electrum",
+      "items": [
+        "alltheores:electrum_dust",
+        "oritech:electrum_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/emerald",
+      "items": [
+        "mekanism:dust_emerald",
+        "appflux:emerald_dust",
+        "occultism:emerald_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/ender_pearl",
+      "items": [
+        "ae2:ender_dust",
+        "enderio:powdered_ender_pearl",
+        "railcraft:ender_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/fluorite",
+      "items": [
+        "alltheores:fluorite_dust",
+        "mekanism:dust_fluorite"
+      ]
+    },
+    {
+      "tag": "c:dusts/gold",
+      "items": [
+        "alltheores:gold_dust",
+        "enderio:powdered_gold",
+        "mekanism:dust_gold",
+        "occultism:gold_dust",
+        "oritech:gold_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/iron",
+      "items": [
+        "alltheores:iron_dust",
+        "enderio:powdered_iron",
+        "mekanism:dust_iron",
+        "occultism:iron_dust",
+        "oritech:iron_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/lapis",
+      "items": [
+        "mekanism:dust_lapis_lazuli",
+        "enderio:powdered_lapis_lazuli",
+        "occultism:lapis_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/lead",
+      "items": [
+        "alltheores:lead_dust",
+        "mekanism:dust_lead"
+      ]
+    },
+    {
+      "tag": "c:dusts/netherite",
+      "items": [
+        "alltheores:netherite_dust",
+        "mekanism:dust_netherite",
+        "occultism:netherite_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/nickel",
+      "items": [
+        "alltheores:nickel_dust",
+        "oritech:nickel_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/obsidian",
+      "items": [
+        "mekanism:dust_obsidian",
+        "enderio:powdered_obsidian",
+        "occultism:obsidian_dust",
+        "railcraft:obsidian_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/osmium",
+      "items": [
+        "alltheores:osmium_dust",
+        "mekanism:dust_osmium"
+      ]
+    },
+    {
+      "tag": "c:dusts/platinum",
+      "items": [
+        "alltheores:platinum_dust",
+        "oritech:platinum_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/quartz",
+      "items": [
+        "mekanism:dust_quartz",
+        "enderio:powdered_quartz",
+        "oritech:quartz_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/salt",
+      "items": [
+        "alltheores:salt_dust",
+        "mekanism:salt"
+      ]
+    },
+    {
+      "tag": "c:dusts/silver",
+      "items": [
+        "alltheores:silver_dust",
+        "ltxi:silver_dust",
+        "mekmm:dust_silver",
+        "occultism:silver_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/steel",
+      "items": [
+        "alltheores:steel_dust",
+        "mekanism:dust_steel",
+        "oritech:steel_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/sulfur",
+      "items": [
+        "alltheores:sulfur_dust",
+        "ltxi:sulfur_dust",
+        "mekanism:dust_sulfur",
+        "railcraft:sulfur_dust"
+      ]
+    },
+    {
+      "tag": "c:dusts/tin",
+      "items": [
+        "alltheores:tin_dust",
+        "enderio:powdered_tin",
+        "mekanism:dust_tin"
+      ]
+    },
+    {
+      "tag": "c:dusts/uranium",
+      "items": [
+        "alltheores:uranium_dust",
+        "mekanism:dust_uranium",
+        "oritech:uranium_dust"
+      ]
+    },
+    {
+      "tag": "c:gears/brass",
+      "items": [
+        "alltheores:brass_gear",
+        "railcraft:brass_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/bronze",
+      "items": [
+        "alltheores:bronze_gear",
+        "railcraft:bronze_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/copper",
+      "items": [
+        "alltheores:copper_gear",
+        "railcraft:copper_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/gold",
+      "items": [
+        "alltheores:gold_gear",
+        "railcraft:gold_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/invar",
+      "items": [
+        "alltheores:invar_gear",
+        "railcraft:invar_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/iron",
+      "items": [
+        "alltheores:iron_gear",
+        "enderio:iron_gear",
+        "railcraft:iron_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/lead",
+      "items": [
+        "alltheores:lead_gear",
+        "railcraft:lead_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/nickel",
+      "items": [
+        "alltheores:nickel_gear",
+        "railcraft:nickel_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/silver",
+      "items": [
+        "alltheores:silver_gear",
+        "railcraft:silver_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/steel",
+      "items": [
+        "alltheores:steel_gear",
+        "railcraft:steel_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/tin",
+      "items": [
+        "alltheores:tin_gear",
+        "railcraft:tin_gear"
+      ]
+    },
+    {
+      "tag": "c:gears/zinc",
+      "items": [
+        "alltheores:zinc_gear",
+        "railcraft:zinc_gear"
+      ]
+    },
+    {
+      "tag": "c:gems/fluorite",
+      "items": [
+        "alltheores:fluorite",
+        "ltxi:fluorite",
+        "mekanism:fluorite_gem"
+      ]
+    },
+    {
+      "tag": "c:ingots/brass",
+      "items": [
+        "alltheores:brass_ingot",
+        "railcraft:brass_ingot",
+        "thaumaturge:ingot_brass"
+      ]
+    },
+    {
+      "tag": "c:ingots/bronze",
+      "items": [
+        "alltheores:bronze_ingot",
+        "mekanism:ingot_bronze",
+        "railcraft:bronze_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/electrum",
+      "items": [
+        "alltheores:electrum_ingot",
+        "oritech:electrum_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/invar",
+      "items": [
+        "alltheores:invar_ingot",
+        "railcraft:invar_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/knightmetal",
+      "items": [
+        "twilightforest:knightmetal_ingot",
+        "tconstruct:knightmetal_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/lead",
+      "items": [
+        "alltheores:lead_ingot",
+        "mekanism:ingot_lead",
+        "railcraft:lead_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/nickel",
+      "items": [
+        "alltheores:nickel_ingot",
+        "oritech:nickel_ingot",
+        "railcraft:nickel_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/osmium",
+      "items": [
+        "alltheores:osmium_ingot",
+        "mekanism:ingot_osmium"
+      ]
+    },
+    {
+      "tag": "c:ingots/platinum",
+      "items": [
+        "alltheores:platinum_ingot",
+        "oritech:platinum_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/silver",
+      "items": [
+        "alltheores:silver_ingot",
+        "ltxi:silver_ingot",
+        "mekmm:ingot_silver",
+        "occultism:silver_ingot",
+        "railcraft:silver_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/steel",
+      "items": [
+        "alltheores:steel_ingot",
+        "mekanism:ingot_steel",
+        "oritech:steel_ingot",
+        "railcraft:steel_ingot",
+        "tconstruct:steel_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/tin",
+      "items": [
+        "alltheores:tin_ingot",
+        "mekanism:ingot_tin",
+        "railcraft:tin_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/titanium",
+      "items": [
+        "stellaris:titanium_ingot",
+        "ltxi:titanium_ingot"
+      ]
+    },
+    {
+      "tag": "c:ingots/uranium",
+      "items": [
+        "alltheores:uranium_ingot",
+        "mekanism:ingot_uranium"
+      ]
+    },
+    {
+      "tag": "c:ingots/zinc",
+      "items": [
+        "alltheores:zinc_ingot",
+        "railcraft:zinc_ingot"
+      ]
+    },
+    {
+      "tag": "c:nuggets/brass",
+      "items": [
+        "alltheores:brass_nugget",
+        "railcraft:brass_nugget",
+        "thaumaturge:nugget_brass"
+      ]
+    },
+    {
+      "tag": "c:nuggets/bronze",
+      "items": [
+        "alltheores:bronze_nugget",
+        "mekanism:nugget_bronze",
+        "railcraft:bronze_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/invar",
+      "items": [
+        "alltheores:invar_nugget",
+        "railcraft:invar_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/lead",
+      "items": [
+        "alltheores:lead_nugget",
+        "mekanism:nugget_lead",
+        "railcraft:lead_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/nickel",
+      "items": [
+        "alltheores:nickel_nugget",
+        "oritech:nickel_nugget",
+        "railcraft:nickel_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/osmium",
+      "items": [
+        "alltheores:osmium_nugget",
+        "mekanism:nugget_osmium"
+      ]
+    },
+    {
+      "tag": "c:nuggets/platinum",
+      "items": [
+        "alltheores:platinum_nugget",
+        "oritech:platinum_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/silver",
+      "items": [
+        "alltheores:silver_nugget",
+        "ltxi:silver_nugget",
+        "mekmm:nugget_silver",
+        "occultism:silver_nugget",
+        "railcraft:silver_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/steel",
+      "items": [
+        "alltheores:steel_nugget",
+        "mekanism:nugget_steel",
+        "railcraft:steel_nugget",
+        "tconstruct:steel_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/tin",
+      "items": [
+        "alltheores:tin_nugget",
+        "mekanism:nugget_tin",
+        "railcraft:tin_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/titanium",
+      "items": [
+        "stellaris:titanium_nugget",
+        "ltxi:titanium_nugget"
+      ]
+    },
+    {
+      "tag": "c:nuggets/uranium",
+      "items": [
+        "alltheores:uranium_nugget",
+        "mekanism:nugget_uranium"
+      ]
+    },
+    {
+      "tag": "c:nuggets/zinc",
+      "items": [
+        "alltheores:zinc_nugget",
+        "railcraft:zinc_nugget"
+      ]
+    },
+    {
+      "tag": "c:plates/brass",
+      "items": [
+        "alltheores:brass_plate",
+        "railcraft:brass_plate",
+        "thaumaturge:plate_brass"
+      ]
+    },
+    {
+      "tag": "c:plates/bronze",
+      "items": [
+        "alltheores:bronze_plate",
+        "railcraft:bronze_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/copper",
+      "items": [
+        "alltheores:copper_plate",
+        "ltxi:copper_plate",
+        "railcraft:copper_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/gold",
+      "items": [
+        "alltheores:gold_plate",
+        "ltxi:gold_plate",
+        "railcraft:gold_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/invar",
+      "items": [
+        "alltheores:invar_plate",
+        "railcraft:invar_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/iron",
+      "items": [
+        "alltheores:iron_plate",
+        "railcraft:iron_plate",
+        "thaumaturge:plate_iron"
+      ]
+    },
+    {
+      "tag": "c:plates/lead",
+      "items": [
+        "alltheores:lead_plate",
+        "railcraft:lead_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/nickel",
+      "items": [
+        "alltheores:nickel_plate",
+        "railcraft:nickel_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/silver",
+      "items": [
+        "alltheores:silver_plate",
+        "ltxi:silver_plate",
+        "railcraft:silver_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/steel",
+      "items": [
+        "alltheores:steel_plate",
+        "railcraft:steel_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/tin",
+      "items": [
+        "alltheores:tin_plate",
+        "railcraft:tin_plate"
+      ]
+    },
+    {
+      "tag": "c:plates/zinc",
+      "items": [
+        "alltheores:zinc_plate",
+        "railcraft:zinc_plate"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/lead",
+      "items": [
+        "alltheores:raw_lead",
+        "mekanism:raw_lead",
+        "railcraft:lead_raw"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/nickel",
+      "items": [
+        "alltheores:raw_nickel",
+        "oritech:raw_nickel",
+        "railcraft:nickel_raw"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/osmium",
+      "items": [
+        "alltheores:raw_osmium",
+        "mekanism:raw_osmium"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/platinum",
+      "items": [
+        "alltheores:raw_platinum",
+        "oritech:raw_platinum"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/silver",
+      "items": [
+        "alltheores:raw_silver",
+        "ltxi:raw_silver",
+        "mekmm:raw_silver",
+        "occultism:raw_silver",
+        "railcraft:silver_raw"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/tin",
+      "items": [
+        "alltheores:raw_tin",
+        "mekanism:raw_tin",
+        "railcraft:tin_raw"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/titanium",
+      "items": [
+        "stellaris:raw_titanium",
+        "ltxi:raw_titanium"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/uranium",
+      "items": [
+        "alltheores:raw_uranium",
+        "mekanism:raw_uranium",
+        "oritech:raw_uranium"
+      ]
+    },
+    {
+      "tag": "c:raw_materials/zinc",
+      "items": [
+        "alltheores:raw_zinc",
+        "railcraft:zinc_raw"
+      ]
+    },
+    {
+      "tag": "c:storage_blocks/brass",
+      "items": [
+        "alltheores:brass_block",
+        "railcraft:brass_block",
+        "thaumaturge:metal_brass"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/bronze",
+      "items": [
+        "alltheores:bronze_block",
+        "mekanism:block_bronze",
+        "railcraft:bronze_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/charcoal",
+      "items": [
+        "mekanism:block_charcoal",
+        "justdirethings:charcoal"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/electrum",
+      "items": [
+        "alltheores:electrum_block",
+        "oritech:electrum"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/fluorite",
+      "items": [
+        "alltheores:fluorite_block",
+        "mekanism:block_fluorite"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/invar",
+      "items": [
+        "alltheores:invar_block",
+        "railcraft:invar_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/knightmetal",
+      "items": [
+        "twilightforest:knightmetal_block",
+        "tconstruct:knightmetal_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/lead",
+      "items": [
+        "alltheores:lead_block",
+        "mekanism:block_lead",
+        "railcraft:lead_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/nickel",
+      "items": [
+        "alltheores:nickel_block",
+        "oritech:nickel",
+        "railcraft:nickel_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/osmium",
+      "items": [
+        "alltheores:osmium_block",
+        "mekanism:block_osmium"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/platinum",
+      "items": [
+        "alltheores:platinum_block",
+        "oritech:platinum"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_lead",
+      "items": [
+        "alltheores:raw_lead_block",
+        "mekanism:block_raw_lead"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_nickel",
+      "items": [
+        "alltheores:raw_nickel_block",
+        "oritech:raw_nickel_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_osmium",
+      "items": [
+        "alltheores:raw_osmium_block",
+        "mekanism:block_raw_osmium"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_platinum",
+      "items": [
+        "alltheores:raw_platinum_block",
+        "oritech:raw_platinum_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_silver",
+      "items": [
+        "alltheores:raw_silver_block",
+        "ltxi:raw_silver_block",
+        "mekmm:block_raw_silver",
+        "occultism:raw_silver_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_tin",
+      "items": [
+        "alltheores:raw_tin_block",
+        "mekanism:block_raw_tin"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/raw_titanium",
+      "items": [
+        "stellaris:raw_titanium_block",
+        "ltxi:raw_titanium_block"
+      ]
+    },
+    {
+      "tag": "c:storage_blocks/raw_uranium",
+      "items": [
+        "alltheores:raw_uranium_block",
+        "mekanism:block_raw_uranium",
+        "oritech:raw_uranium_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/silicon",
+      "items": [
+        "extendedae:silicon_block",
+        "oritech:silicon_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/silver",
+      "items": [
+        "alltheores:silver_block",
+        "ltxi:silver_block",
+        "mekmm:block_silver",
+        "occultism:silver_block",
+        "railcraft:silver_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/steel",
+      "items": [
+        "alltheores:steel_block",
+        "mekanism:block_steel",
+        "oritech:steel",
+        "railcraft:steel_block",
+        "tconstruct:steel_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/tin",
+      "items": [
+        "alltheores:tin_block",
+        "mekanism:block_tin",
+        "railcraft:tin_block"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/titanium",
+      "items": [
+        "stellaris:titanium_block",
+        "ltxi:titanium_block"
+      ]
+    },
+    {
+      "tag": "c:storage_blocks/uranium",
+      "items": [
+        "alltheores:uranium_block",
+        "mekanism:block_uranium"
+      ],
+      "convertBlocks": true
+    },
+    {
+      "tag": "c:storage_blocks/zinc",
+      "items": [
+        "alltheores:zinc_block",
+        "railcraft:zinc_block"
+      ],
+      "convertBlocks": true
+    }
+  ],
+  "blockReplacements": {
+    "mekanism:deepslate_fluorite_ore": "alltheores:deepslate_fluorite_ore",
+    "mekanism:fluorite_ore": "alltheores:fluorite_ore",
+    "mekanism:deepslate_lead_ore": "alltheores:deepslate_lead_ore",
+    "mekanism:lead_ore": "alltheores:lead_ore",
+    "railcraft:deepslate_lead_ore": "alltheores:deepslate_lead_ore",
+    "railcraft:lead_ore": "alltheores:lead_ore",
+    "oritech:deepslate_nickel_ore": "alltheores:deepslate_nickel_ore",
+    "oritech:nickel_ore": "alltheores:nickel_ore",
+    "railcraft:deepslate_nickel_ore": "alltheores:deepslate_nickel_ore",
+    "railcraft:nickel_ore": "alltheores:nickel_ore",
+    "mekanism:deepslate_osmium_ore": "alltheores:deepslate_osmium_ore",
+    "mekanism:osmium_ore": "alltheores:osmium_ore",
+    "oritech:deepslate_platinum_ore": "alltheores:deepslate_platinum_ore",
+    "oritech:endstone_platinum_ore": "alltheores:end_platinum_ore",
+    "ltxi:deepslate_silver_ore": "alltheores:deepslate_silver_ore",
+    "ltxi:silver_ore": "alltheores:silver_ore",
+    "mekmm:deepslate_silver_ore": "alltheores:deepslate_silver_ore",
+    "mekmm:silver_ore": "alltheores:silver_ore",
+    "occultism:silver_ore": "alltheores:silver_ore",
+    "occultism:silver_ore_deepslate": "alltheores:deepslate_silver_ore",
+    "railcraft:deepslate_silver_ore": "alltheores:deepslate_silver_ore",
+    "railcraft:silver_ore": "alltheores:silver_ore",
+    "railcraft:deepslate_sulfur_ore": "alltheores:deepslate_sulfur_ore",
+    "railcraft:sulfur_ore": "alltheores:sulfur_ore",
+    "mekanism:deepslate_tin_ore": "alltheores:deepslate_tin_ore",
+    "mekanism:tin_ore": "alltheores:tin_ore",
+    "railcraft:deepslate_tin_ore": "alltheores:deepslate_tin_ore",
+    "railcraft:tin_ore": "alltheores:tin_ore",
+    "mekanism:deepslate_uranium_ore": "alltheores:deepslate_uranium_ore",
+    "mekanism:uranium_ore": "alltheores:uranium_ore",
+    "oritech:deepslate_uranium_ore": "alltheores:deepslate_uranium_ore",
+    "railcraft:deepslate_zinc_ore": "alltheores:deepslate_zinc_ore",
+    "railcraft:zinc_ore": "alltheores:zinc_ore"
+  },
+  "hiddenItems": [
+    "mekanism:dust_bronze",
+    "railcraft:charcoal_dust",
+    "enderio:powdered_coal",
+    "oritech:coal_dust",
+    "railcraft:coal_dust",
+    "enderio:powdered_copper",
+    "mekanism:dust_copper",
+    "occultism:copper_dust",
+    "oritech:copper_dust",
+    "appflux:diamond_dust",
+    "mekanism:dust_diamond",
+    "oritech:electrum_dust",
+    "appflux:emerald_dust",
+    "occultism:emerald_dust",
+    "enderio:powdered_ender_pearl",
+    "railcraft:ender_dust",
+    "mekanism:dust_fluorite",
+    "enderio:powdered_gold",
+    "mekanism:dust_gold",
+    "occultism:gold_dust",
+    "oritech:gold_dust",
+    "enderio:powdered_iron",
+    "mekanism:dust_iron",
+    "occultism:iron_dust",
+    "oritech:iron_dust",
+    "enderio:powdered_lapis_lazuli",
+    "occultism:lapis_dust",
+    "mekanism:dust_lead",
+    "mekanism:dust_netherite",
+    "occultism:netherite_dust",
+    "oritech:nickel_dust",
+    "enderio:powdered_obsidian",
+    "occultism:obsidian_dust",
+    "railcraft:obsidian_dust",
+    "mekanism:dust_osmium",
+    "oritech:platinum_dust",
+    "enderio:powdered_quartz",
+    "oritech:quartz_dust",
+    "mekanism:salt",
+    "ltxi:silver_dust",
+    "mekmm:dust_silver",
+    "occultism:silver_dust",
+    "mekanism:dust_steel",
+    "oritech:steel_dust",
+    "ltxi:sulfur_dust",
+    "mekanism:dust_sulfur",
+    "railcraft:sulfur_dust",
+    "enderio:powdered_tin",
+    "mekanism:dust_tin",
+    "mekanism:dust_uranium",
+    "oritech:uranium_dust",
+    "railcraft:brass_gear",
+    "railcraft:bronze_gear",
+    "railcraft:copper_gear",
+    "railcraft:gold_gear",
+    "railcraft:invar_gear",
+    "enderio:iron_gear",
+    "railcraft:iron_gear",
+    "railcraft:lead_gear",
+    "railcraft:nickel_gear",
+    "railcraft:silver_gear",
+    "railcraft:steel_gear",
+    "railcraft:tin_gear",
+    "railcraft:zinc_gear",
+    "railcraft:brass_ingot",
+    "thaumaturge:ingot_brass",
+    "mekanism:ingot_bronze",
+    "railcraft:bronze_ingot",
+    "oritech:electrum_ingot",
+    "railcraft:invar_ingot",
+    "tconstruct:knightmetal_ingot",
+    "mekanism:ingot_lead",
+    "railcraft:lead_ingot",
+    "oritech:nickel_ingot",
+    "railcraft:nickel_ingot",
+    "mekanism:ingot_osmium",
+    "oritech:platinum_ingot",
+    "ltxi:silver_ingot",
+    "mekmm:ingot_silver",
+    "occultism:silver_ingot",
+    "railcraft:silver_ingot",
+    "mekanism:ingot_steel",
+    "oritech:steel_ingot",
+    "railcraft:steel_ingot",
+    "tconstruct:steel_ingot",
+    "mekanism:ingot_tin",
+    "railcraft:tin_ingot",
+    "ltxi:titanium_ingot",
+    "mekanism:ingot_uranium",
+    "railcraft:zinc_ingot",
+    "railcraft:brass_nugget",
+    "thaumaturge:nugget_brass",
+    "mekanism:nugget_bronze",
+    "railcraft:bronze_nugget",
+    "railcraft:invar_nugget",
+    "mekanism:nugget_lead",
+    "railcraft:lead_nugget",
+    "oritech:nickel_nugget",
+    "railcraft:nickel_nugget",
+    "mekanism:nugget_osmium",
+    "oritech:platinum_nugget",
+    "ltxi:silver_nugget",
+    "mekmm:nugget_silver",
+    "occultism:silver_nugget",
+    "railcraft:silver_nugget",
+    "mekanism:nugget_steel",
+    "railcraft:steel_nugget",
+    "tconstruct:steel_nugget",
+    "mekanism:nugget_tin",
+    "railcraft:tin_nugget",
+    "ltxi:titanium_nugget",
+    "mekanism:nugget_uranium",
+    "railcraft:zinc_nugget",
+    "railcraft:brass_plate",
+    "thaumaturge:plate_brass",
+    "railcraft:bronze_plate",
+    "ltxi:copper_plate",
+    "railcraft:copper_plate",
+    "ltxi:gold_plate",
+    "railcraft:gold_plate",
+    "railcraft:invar_plate",
+    "railcraft:iron_plate",
+    "thaumaturge:plate_iron",
+    "railcraft:lead_plate",
+    "railcraft:nickel_plate",
+    "ltxi:silver_plate",
+    "railcraft:silver_plate",
+    "railcraft:steel_plate",
+    "railcraft:tin_plate",
+    "railcraft:zinc_plate",
+    "railcraft:brass_block",
+    "thaumaturge:metal_brass",
+    "mekanism:block_bronze",
+    "railcraft:bronze_block",
+    "justdirethings:charcoal",
+    "oritech:electrum",
+    "mekanism:block_fluorite",
+    "railcraft:invar_block",
+    "tconstruct:knightmetal_block",
+    "mekanism:block_lead",
+    "railcraft:lead_block",
+    "oritech:nickel",
+    "railcraft:nickel_block",
+    "mekanism:block_osmium",
+    "oritech:platinum",
+    "oritech:silicon_block",
+    "ltxi:silver_block",
+    "mekmm:block_silver",
+    "occultism:silver_block",
+    "railcraft:silver_block",
+    "mekanism:block_steel",
+    "oritech:steel",
+    "railcraft:steel_block",
+    "tconstruct:steel_block",
+    "mekanism:block_tin",
+    "railcraft:tin_block",
+    "ltxi:titanium_block",
+    "mekanism:block_uranium",
+    "railcraft:zinc_block",
+    "enderio:silicon",
+    "oritech:silicon",
+    "stellaris:silicon"
+  ],
+  "hiddenOres": [
+    "ltxi:deepslate_silver_ore",
+    "ltxi:silver_ore",
+    "mekanism:deepslate_fluorite_ore",
+    "mekanism:deepslate_lead_ore",
+    "mekanism:deepslate_osmium_ore",
+    "mekanism:deepslate_tin_ore",
+    "mekanism:deepslate_uranium_ore",
+    "mekanism:fluorite_ore",
+    "mekanism:lead_ore",
+    "mekanism:osmium_ore",
+    "mekanism:tin_ore",
+    "mekanism:uranium_ore",
+    "mekmm:deepslate_silver_ore",
+    "mekmm:silver_ore",
+    "occultism:silver_ore",
+    "occultism:silver_ore_deepslate",
+    "oritech:deepslate_nickel_ore",
+    "oritech:deepslate_platinum_ore",
+    "oritech:deepslate_uranium_ore",
+    "oritech:endstone_platinum_ore",
+    "oritech:nickel_ore",
+    "railcraft:deepslate_lead_ore",
+    "railcraft:deepslate_nickel_ore",
+    "railcraft:deepslate_silver_ore",
+    "railcraft:deepslate_sulfur_ore",
+    "railcraft:deepslate_tin_ore",
+    "railcraft:deepslate_zinc_ore",
+    "railcraft:lead_ore",
+    "railcraft:nickel_ore",
+    "railcraft:silver_ore",
+    "railcraft:sulfur_ore",
+    "railcraft:tin_ore",
+    "railcraft:zinc_ore"
+  ]
+}

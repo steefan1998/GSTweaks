@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 2,
+    "targets": [
+      {
+        "target": {
+          "block": "gspack:mars_stone",
+          "predicate_type": "minecraft:block_match"
+        },
+        "state": {
+          "Name": "gspack:mars_unobtainium_ore"
+        }
+      }
+    ],
+    "discard_chance_on_air_exposure": 0.5
+  }
+}

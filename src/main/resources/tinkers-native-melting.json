@@ -1,0 +1,200 @@
+{
+  "allthemodium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_allthemodium"
+    },
+    "rate": "metal",
+    "temperature": 1500,
+    "time": 201
+  },
+  "aluminum": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_aluminum"
+    },
+    "rate": "metal",
+    "temperature": 425,
+    "time": 118
+  },
+  "cadmium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_cadmium"
+    },
+    "rate": "metal",
+    "temperature": 294,
+    "time": 105
+  },
+  "chromium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_chromium"
+    },
+    "rate": "metal",
+    "temperature": 900,
+    "time": 158
+  },
+  "cobalt": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_cobalt"
+    },
+    "rate": "metal",
+    "temperature": 950,
+    "time": 162
+  },
+  "copper": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_copper"
+    },
+    "rate": "metal",
+    "temperature": 500,
+    "time": 125
+  },
+  "diamond": {
+    "result": {
+      "amount": 100,
+      "fluid": "tconstruct:molten_diamond"
+    },
+    "rate": "gem",
+    "temperature": 1450,
+    "time": 197
+  },
+  "emerald": {
+    "result": {
+      "amount": 100,
+      "fluid": "tconstruct:molten_emerald"
+    },
+    "rate": "gem",
+    "temperature": 934,
+    "time": 161
+  },
+  "gold": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_gold"
+    },
+    "rate": "metal",
+    "temperature": 700,
+    "time": 142
+  },
+  "iron": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_iron"
+    },
+    "rate": "metal",
+    "temperature": 800,
+    "time": 150
+  },
+  "lead": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_lead"
+    },
+    "rate": "metal",
+    "temperature": 330,
+    "time": 109
+  },
+  "nickel": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_nickel"
+    },
+    "rate": "metal",
+    "temperature": 950,
+    "time": 162
+  },
+  "osmium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_osmium"
+    },
+    "rate": "metal",
+    "temperature": 975,
+    "time": 164
+  },
+  "platinum": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_platinum"
+    },
+    "rate": "metal",
+    "temperature": 970,
+    "time": 164
+  },
+  "quartz": {
+    "result": {
+      "amount": 100,
+      "fluid": "tconstruct:molten_quartz"
+    },
+    "rate": "gem",
+    "temperature": 637,
+    "time": 137
+  },
+  "silver": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_silver"
+    },
+    "rate": "metal",
+    "temperature": 790,
+    "time": 150
+  },
+  "tin": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_tin"
+    },
+    "rate": "metal",
+    "temperature": 225,
+    "time": 98
+  },
+  "tungsten": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_tungsten"
+    },
+    "rate": "metal",
+    "temperature": 950,
+    "time": 162
+  },
+  "unobtainium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_unobtainium"
+    },
+    "rate": "metal",
+    "temperature": 1500,
+    "time": 201
+  },
+  "uranium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_uranium"
+    },
+    "rate": "metal",
+    "temperature": 830,
+    "time": 153
+  },
+  "vibranium": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_vibranium"
+    },
+    "rate": "metal",
+    "temperature": 1500,
+    "time": 201
+  },
+  "zinc": {
+    "result": {
+      "amount": 180,
+      "tag": "c:molten_zinc"
+    },
+    "rate": "metal",
+    "temperature": 420,
+    "time": 117
+  }
+}

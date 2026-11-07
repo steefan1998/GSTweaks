@@ -1,0 +1,11 @@
+{
+  "translation_key": "planet.stellaris.mars",
+  "dimension": "stellaris:mars",
+  "gravity": 3.71,
+  "has_oxygen": false,
+  "allow_space_stations": false,
+  "temperature": {
+    "dayTimeTemperature": 20,
+    "nightTimeTemperature": -100
+  }
+}

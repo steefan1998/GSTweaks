@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "gspack:block/mars_unobtainium_ore"
+    },
+    "lit=true": {
+      "model": "gspack:block/mars_unobtainium_ore"
+    }
+  }
+}

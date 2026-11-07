@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "alltheores"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/iridium"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ingots/iridium"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 4
+}

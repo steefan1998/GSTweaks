@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "mysticalagriculture"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/soulium"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ingots/soulium"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 3
+}

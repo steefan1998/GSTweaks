@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "gspack:mars_copper_ore",
+    "gspack:mars_gold_ore",
+    "gspack:mars_iron_ore",
+    "gspack:mars_unobtainium_ore",
+    "gspack:mars_stone",
+    "gspack:mars_lumestone",
+    "gspack:mars_osmium_ore",
+    "gspack:mars_uranium_ore",
+    "gspack:allthemodium_crux",
+    "gspack:vibranium_crux",
+    "gspack:unobtainium_crux"
+  ]
+}

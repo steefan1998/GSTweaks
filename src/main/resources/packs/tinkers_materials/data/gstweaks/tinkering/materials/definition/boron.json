@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "colossal_reactors"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/boron"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ingots/boron"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 3
+}
