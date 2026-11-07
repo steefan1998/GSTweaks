@@ -4,6 +4,8 @@
 
 **Auteurs:** Steef_an & ChatGPT Codex
 
+GSTweaks valt onder de [MIT-licentie](LICENSE). Voor de meegeleverde NeoForge-templatebestanden geldt de [NeoForge-templatelicentie](TEMPLATE_LICENSE.txt).
+
 Een NeoForge-mod voor Minecraft **26.1.2** en Java 25. GSTweaks registreert de vijf Cores, Creative Singularity, plaatsbare Trophy of Infinity, Crux-blokken en Mars-items en -blokken. De bestaande GSPack-ID’s blijven behouden.
 
 ## Optionele compatibiliteit

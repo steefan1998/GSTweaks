@@ -35,6 +35,7 @@ tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 tasks.named('processResources', ProcessResources) {
+    from('LICENSE', 'TEMPLATE_LICENSE.txt')
     from('migration') {
         include 'files.json', 'kubejs/**'
         into 'migration'
