@@ -95,9 +95,11 @@ public final class DailyRewards {
                 .then(Commands.literal("timezone")
                         .executes(context -> {
                             context.getSource().sendSuccess(() -> Component.translatable(
-                                    "daily.gstweaks.timezone_current", config.timeZone), false);
+                                    "daily.gstweaks.timezone_current", zoneLabel()), false);
                             return 1;
                         })
+                        .then(Commands.literal(DailyConfig.AUTO)
+                                .executes(context -> setZone(context.getSource(), DailyConfig.AUTO)))
                         .then(Commands.argument("zone", StringArgumentType.greedyString())
                                 .suggests((context, builder) -> SharedSuggestionProvider.suggest(
                                         ZoneId.getAvailableZoneIds(), builder))
@@ -120,7 +122,7 @@ public final class DailyRewards {
 
     private int setZone(CommandSourceStack source, String name) {
         try {
-            config.setZone(ZoneId.of(name));
+            config.setZone(name);
         } catch (DateTimeException exception) {
             source.sendFailure(Component.translatable("daily.gstweaks.timezone_invalid", name));
             return 0;
@@ -130,8 +132,14 @@ public final class DailyRewards {
             return 0;
         }
         online.clear();
-        source.sendSuccess(() -> Component.translatable("daily.gstweaks.timezone_updated", config.timeZone), true);
+        source.sendSuccess(() -> Component.translatable("daily.gstweaks.timezone_updated", zoneLabel()), true);
         return 1;
+    }
+
+    private Component zoneLabel() {
+        String zone = config.zone().getId();
+        return config.automaticZone() ? Component.translatable("daily.gstweaks.timezone_auto", zone)
+                : Component.literal(zone);
     }
 
     private void onLogin(PlayerEvent.PlayerLoggedInEvent event) {
@@ -199,7 +207,7 @@ public final class DailyRewards {
         var played = Component.translatable("daily.gstweaks.playtime",
                 format(progress.playedMillis() / 1000), format(requiredMillis() / 1000));
         var reset = Component.translatable("daily.gstweaks.reset",
-                format(Math.max(0, Duration.between(now, startOf(day + 1)).toSeconds())), config.timeZone);
+                format(Math.max(0, Duration.between(now, startOf(day + 1)).toSeconds())), config.zone().getId());
         if (player.connection.hasChannel(DailyStatus.TYPE)) {
             PacketDistributor.sendToPlayer(player, new DailyStatus(open, available.equals("ready"), message, played, reset));
         } else {

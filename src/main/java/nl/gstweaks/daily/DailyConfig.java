@@ -15,10 +15,12 @@ import java.time.ZoneId;
 import java.util.List;
 
 final class DailyConfig {
+    static final String AUTO = "auto";
+
     record Reward(String item, int count) {}
 
     boolean enabled = true;
-    String timeZone = "Europe/Amsterdam";
+    private String timeZone = AUTO;
     int resetHour = 0;
     int minimumOnlineMinutes = 30;
     int experience = 30;
@@ -54,13 +56,18 @@ final class DailyConfig {
     }
 
     ZoneId zone() {
-        return ZoneId.of(timeZone);
+        return automaticZone() ? ZoneId.systemDefault() : ZoneId.of(timeZone);
     }
 
-    void setZone(ZoneId zone) throws IOException {
+    boolean automaticZone() {
+        return AUTO.equals(timeZone);
+    }
+
+    void setZone(String name) throws IOException {
+        String setting = AUTO.equals(name) ? AUTO : ZoneId.of(name).getId();
         var path = path();
         var json = JsonParser.parseString(Files.readString(path)).getAsJsonObject();
-        json.addProperty("timeZone", zone.getId());
+        json.addProperty("timeZone", setting);
         var temporary = Files.createTempFile(path.getParent(), "daily-rewards-", ".tmp");
         try {
             Files.writeString(temporary, new GsonBuilder().setPrettyPrinting().create().toJson(json)
@@ -70,7 +77,7 @@ final class DailyConfig {
             } catch (AtomicMoveNotSupportedException exception) {
                 Files.move(temporary, path, StandardCopyOption.REPLACE_EXISTING);
             }
-            timeZone = zone.getId();
+            timeZone = setting;
         } finally {
             Files.deleteIfExists(temporary);
         }

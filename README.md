@@ -29,7 +29,7 @@ The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/t
 ## Migrating from GSPack
 
 1. Close Minecraft or stop the server. Make a copy of the instance and the world.
-2. Place `GSTweaks-0.2.0.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
+2. Place `GSTweaks-0.2.1.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
 3. Start the client and server. GSTweaks archives recognized legacy files before KubeJS reads them. The converter installs updated recipes and stops if it finds customized files that need to be merged manually.
 
 Automatic backups are stored in `gstweaks-backup/kubejs-*/kubejs`. To roll back, use the original world copy, restore the archived files, and remove the new jar and the files listed in `created-files.json`.
@@ -78,18 +78,18 @@ GSTweaks creates `config/gstweaks/gstweaks.json` on first launch. Changes take e
 
 ## Daily Rewards
 
-Open the menu with `/gstweaks daily` or use the FTB sidebar. Each player can claim one reward per day from the menu or with `/gstweaks daily claim`. By default, a reward becomes available after **30 minutes of online playtime** that day. Rewards reset at **midnight in Europe/Amsterdam**. Playtime is saved per player in the world.
+Open the menu with `/gstweaks daily` or use the FTB sidebar. Each player can claim one reward per day from the menu or with `/gstweaks daily claim`. By default, a reward becomes available after **30 minutes of online playtime** that day. Rewards reset at **midnight in the host's time zone**. Playtime is saved per player in the world.
 
 Operators can inspect an online player's status with `/gstweaks daily debug <player>`. This command only displays the player's status. The implementation is based on [GSMod-DailyRewards](https://github.com/steefan1998/GSmod/tree/main/GSMod-DailyRewards). When replacing the old mod, GSTweaks can read each player's last claim day from the same world. Use one Daily Rewards module per instance.
 
-Operators can check the current time zone with `/gstweaks daily admin timezone`. To change and save it immediately, run a command such as `/gstweaks daily admin timezone Europe/Amsterdam`.
+Operators can check the active time zone and whether it was selected automatically with `/gstweaks daily admin timezone`. Run `/gstweaks daily admin timezone auto` to use the server's time zone, or the local machine's time zone in single-player. To set a fixed zone, use a command such as `/gstweaks daily admin timezone Europe/Amsterdam`. Existing fixed settings are kept until changed.
 
 Server settings are stored in `config/gstweaks/daily-rewards.json`.
 
 | Setting | Default | Effect |
 | --- | --- | --- |
 | `enabled` | `true` | Enables rewards. |
-| `timeZone` | `Europe/Amsterdam` | Time zone used to determine the reward day. |
+| `timeZone` | `auto` | Uses the host's time zone or a fixed IANA zone such as `Europe/Amsterdam` to determine the reward day. |
 | `resetHour` | `0` | Local reset hour from 0 to 23. |
 | `minimumOnlineMinutes` | `30` | Online playtime required each day. Set to `0` to make the reward available immediately. |
 | `experience` | `30` | XP points per claim. |
@@ -109,4 +109,4 @@ Use JDK 25 and point `packMods` at the directory containing the local compile-ti
 .\gradlew.bat build '-PpackMods=D:/path/to/GSPack/mods'
 ```
 
-The build produces `build/libs/GSTweaks-0.2.0.jar`.
+The build produces `build/libs/GSTweaks-0.2.1.jar`.

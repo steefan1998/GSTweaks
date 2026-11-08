@@ -11,8 +11,8 @@ import net.neoforged.neoforge.client.fluid.FluidTintSources;
 
 @EventBusSubscriber(modid = GSTweaks.MOD_ID, value = Dist.CLIENT)
 final class MoltenFluidModels {
-    private static final Material STILL = new Material(Identifier.withDefaultNamespace("block/water_still"));
-    private static final Material FLOWING = new Material(Identifier.withDefaultNamespace("block/water_flow"));
+    private static final Material STILL = new Material(Identifier.fromNamespaceAndPath("tconstruct", "fluid/molten/still"));
+    private static final Material FLOWING = new Material(Identifier.fromNamespaceAndPath("tconstruct", "fluid/molten/flowing"));
 
     @SubscribeEvent
     static void register(RegisterFluidModelsEvent event) {
