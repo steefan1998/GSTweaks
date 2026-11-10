@@ -1,0 +1,7 @@
+{
+  "icon": ["minecraft:textures/item/wooden_pickaxe.png"],
+  "sort_index": 351,
+  "click": ["command:/gstweaks options"],
+  "requires_op": true,
+  "required_mods": ["tconstruct"]
+}

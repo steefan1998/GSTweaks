@@ -1,0 +1,6 @@
+{
+  "values": [
+    { "id": "equivox:red_matter", "required": false },
+    { "id": "projecte:red_matter", "required": false }
+  ]
+}

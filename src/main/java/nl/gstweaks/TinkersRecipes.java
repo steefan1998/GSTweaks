@@ -61,9 +61,19 @@ final class TinkersRecipes {
 
         for (var material : MoltenMaterials.materials()) {
             boolean toolParts = settings.tinkersToolMaterials && material.toolMaterial();
-            var ores = items(context, "c:ores/" + material.name()).toList();
             var output = output(context, material);
-            if (ores.isEmpty() || output == Items.AIR) {
+            if (output == Items.AIR) {
+                continue;
+            }
+            // Refined-only materials can be melted and recast without a corresponding ore.
+            if (material.oreAmount() == 0) {
+                if (settings.tinkersOreRecipes) {
+                    addCasting(event, material, output);
+                    addProductMelting(event, material, output, existing, "melting/");
+                }
+                continue;
+            }
+            if (items(context, "c:ores/" + material.name()).findAny().isEmpty()) {
                 continue;
             }
 
@@ -72,14 +82,7 @@ final class TinkersRecipes {
             var temperature = material.temperature();
             var ingot = material.cast().equals("ingot");
             if (settings.tinkersOreRecipes) {
-                var casting = json("tconstruct:casting_table");
-                casting.add("fluid", fluid(fluid, material.amount()));
-                casting.addProperty("result", itemId(output));
-                casting.addProperty("cooling_time", 60);
-                if (!material.cast().isEmpty()) {
-                    casting.addProperty("cast", "#tconstruct:casts/multi_use/" + material.cast());
-                }
-                put(event, "casting/" + id, casting);
+                addCasting(event, material, output);
 
                 var ore = json("tconstruct:ore_melting");
                 ore.add("result", fluid(fluid, material.oreAmount()));
@@ -94,6 +97,17 @@ final class TinkersRecipes {
             }
         }
         LogUtils.getLogger().info("GSTweaks added {} Tinkers ore melting recipes", added.size());
+    }
+
+    private static void addCasting(ModifyRecipeJsonsEvent event, MoltenMaterials.Material material, Item output) {
+        var casting = json("tconstruct:casting_table");
+        casting.add("fluid", fluid(material.fluidId(), material.amount()));
+        casting.addProperty("result", itemId(output));
+        casting.addProperty("cooling_time", 60);
+        if (!material.cast().isEmpty()) {
+            casting.addProperty("cast", "#tconstruct:casts/multi_use/" + material.cast());
+        }
+        put(event, "casting/" + material.name(), casting);
     }
 
     private static void addToolParts(ModifyRecipeJsonsEvent event, MoltenMaterials.Material material, Item output,
@@ -122,13 +136,18 @@ final class TinkersRecipes {
         put(event, "materials/recycling/" + name, recycle);
 
         // Refined material remains a source of fluid even when another addon handles the ore.
+        addProductMelting(event, material, output, existing, "materials/melting/");
+    }
+
+    private static void addProductMelting(ModifyRecipeJsonsEvent event, MoltenMaterials.Material material, Item output,
+                                          List<Predicate<Item>> existing, String recipePath) {
         if (existing.stream().noneMatch(ingredient -> ingredient.test(output))) {
             var melt = json("tconstruct:melting");
             melt.addProperty("ingredient", itemId(output));
-            melt.add("result", fluid(fluid, material.amount()));
-            melt.addProperty("temperature", temperature);
+            melt.add("result", fluid(material.fluidId(), material.amount()));
+            melt.addProperty("temperature", material.temperature());
             melt.addProperty("time", 110);
-            put(event, "materials/melting/" + name, melt);
+            put(event, recipePath + material.name(), melt);
         }
     }
 

@@ -18,18 +18,20 @@ GSTweaks is a NeoForge mod for Minecraft **26.1.2** and Java 25. It registers th
 | Mekanism Additions | Adds Baby Creepers on Mars and in the research dome. The dome has a regular Creeper when Mekanism Additions is absent. |
 | JEI | Hides configured material duplicates when the preferred variant is available. |
 | Thaumaturge | Adds material aspects for common tags and lets the Thaumometer record modded blocks that have no aspects. |
-| Tinkers’ Construct / Continuum Construct | Adds missing melting recipes and 27 optional molten materials. Eighteen materials have their own stats for heads, handles, and bindings, along with casting, repair, and recycling recipes. |
-| FTB Library / FTB Essentials | Adds an inventory sidebar button that opens Daily Rewards. |
+| Tinkers’ Construct / Continuum Construct | Adds missing melting recipes and 29 optional molten materials. Eighteen materials have their own stats for heads, handles, and bindings, along with casting, repair, and recycling recipes. |
+| FTB Library / FTB Essentials | Adds inventory sidebar buttons for Daily Rewards and the operator-only GSTweaks Options. |
 | Powah and Extended Crafting | GSPack's KubeJS scripts skip individual recipes when a required mod or ingredient is missing. |
 
 The [molten materials list](src/main/resources/molten-materials.json) shows which fluids GSTweaks adds. Each fluid is registered when Tinkers and the corresponding material mod are installed. Existing melting recipes take precedence, and a casting recipe is added when a matching ore and output are available. These fluids are intended for tanks and casting tables.
 
 The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/tinkering/materials/stats) define each material's trade-offs. Desh is light and fast, boron trades speed for durability, and novite deals relatively high damage with less durability than titanium.
 
+With Equivox or ProjectE, one Dark Matter or Red Matter item melts into 100 mB. A reusable gem cast turns 100 mB back into one item. If both mods are present, the recipes use Equivox items. The ProjectE integration recognizes the original item IDs. GSTweaks builds target Minecraft 26.1.2.
+
 ## Migrating from GSPack
 
 1. Close Minecraft or stop the server. Make a copy of the instance and the world.
-2. Place `GSTweaks-0.2.1.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
+2. Place `GSTweaks-0.3.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
 3. Start the client and server. GSTweaks archives recognized legacy files before KubeJS reads them. The converter installs updated recipes and stops if it finds customized files that need to be merged manually.
 
 Automatic backups are stored in `gstweaks-backup/kubejs-*/kubejs`. To roll back, use the original world copy, restore the archived files, and remove the new jar and the files listed in `created-files.json`.
@@ -75,6 +77,10 @@ GSTweaks creates `config/gstweaks/gstweaks.json` on first launch. Changes take e
 | `thaumaturgeCompat` | Enables additional scans and material aspects. |
 | `tinkersOreRecipes` | Enables additional melting and casting recipes. |
 | `tinkersToolMaterials` | Enables the new tool part materials and their recipes. |
+| `unifyOil` | On by default. The Oritech Centrifuge with a Fluid Addon converts crude oil to Oritech oil at a 1:1 ratio. Without Oritech, the Mekanism Thermal Evaporation Plant converts oil at the same ratio, using BuildCraft oil first and Stellaris oil as the fallback. BuildCraft and Stellaris crude oil recipes also accept the selected base oil. |
+| `woodenToolsOnly` | Off by default. Keeps the wooden vanilla recipes for pickaxes, axes, shovels, hoes, swords, and spears. Removes recipes for those items from stone through netherite and for Mekanism and AllTheModium paxels. Modded recipes that specify one of these vanilla tools as a crafting ingredient use the corresponding Continuum Tinker tool. |
+
+Operators can open **GSTweaks Options** with `/gstweaks options` or the FTB inventory sidebar. The **Tinkers Hard Mode** setting also works from the server console with `gstweaks options wooden_tools_only true`. Use `false` to restore the recipes. Each change saves to `config/gstweaks/gstweaks.json` and reloads the server recipes immediately. The game or server may briefly freeze during the reload.
 
 ## Daily Rewards
 
@@ -109,4 +115,4 @@ Use JDK 25 and point `packMods` at the directory containing the local compile-ti
 .\gradlew.bat build '-PpackMods=D:/path/to/GSPack/mods'
 ```
 
-The build produces `build/libs/GSTweaks-0.2.1.jar`.
+The build produces `build/libs/GSTweaks-0.3.jar`.

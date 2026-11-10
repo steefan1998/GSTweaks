@@ -20,6 +20,7 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.common.Mod;
@@ -90,6 +91,11 @@ public final class GSTweaks {
 
     public GSTweaks(IEventBus modBus) {
         var settings = GSTweaksConfig.get();
+        boolean hasTinkers = loaded("tconstruct");
+        if (settings.woodenToolsOnly && !hasTinkers) {
+            throw new IllegalStateException("GSTweaks woodenToolsOnly requires Continuum Tinker (tconstruct). "
+                    + "Install it or disable woodenToolsOnly in config/gstweaks/gstweaks.json.");
+        }
         UnificationConfig.get();
         if (settings.autoMigrateKubeJs) {
             KubeJsMigration.run();
@@ -105,9 +111,17 @@ public final class GSTweaks {
             NeoForge.EVENT_BUS.addListener(EndgameTooltips::add);
         }
         Unification.register();
+        if (settings.unifyOil && (loaded("oritech") || loaded("mekanism"))) {
+            NeoForge.EVENT_BUS.addListener(OilUnification::addRecipes);
+        }
         new BlockMigration().register();
-        if (loaded("tconstruct") && (settings.tinkersOreRecipes || settings.tinkersToolMaterials)) {
+        if (hasTinkers && (settings.tinkersOreRecipes || settings.tinkersToolMaterials)) {
             NeoForge.EVENT_BUS.addListener(TinkersRecipes::addRecipes);
+        }
+        if (hasTinkers) {
+            ToolSmithingRecipe.register(modBus);
+            NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, ToolProgression::apply);
+            GSTweaksOptions.register(modBus);
         }
         if (loaded("stellaris")) {
             new MarsEvents().register();

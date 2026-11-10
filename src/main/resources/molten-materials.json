@@ -344,6 +344,26 @@
     "toolMaterial": true
   },
   {
+    "name": "dark_matter",
+    "mods": ["equivox", "projecte"],
+    "productTag": "gstweaks:compat/dark_matter",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 0,
+    "temperature": 900,
+    "color": 7557531
+  },
+  {
+    "name": "red_matter",
+    "mods": ["equivox", "projecte"],
+    "productTag": "gstweaks:compat/red_matter",
+    "cast": "gem",
+    "amount": 100,
+    "oreAmount": 0,
+    "temperature": 1000,
+    "color": 15152195
+  },
+  {
     "name": "uraninite",
     "mods": [
       "powah"

@@ -2,7 +2,7 @@
 param(
     [Parameter(Mandatory)]
     [string]$Instance,
-    [string]$Jar = (Join-Path $PSScriptRoot '../build/libs/GSTweaks-0.2.1.jar'),
+    [string]$Jar = (Join-Path $PSScriptRoot '../build/libs/GSTweaks-0.3.jar'),
     [switch]$Apply
 )
 
