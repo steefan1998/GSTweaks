@@ -8,6 +8,14 @@ GSTweaks is available under the [MIT License](LICENSE). The included NeoForge te
 
 GSTweaks is a NeoForge mod for Minecraft **26.1.2** and Java 25. It registers the five Cores, the Creative Singularity, the placeable Trophy of Infinity, Crux blocks, and Mars items and blocks. Existing GSPack registry IDs are preserved.
 
+Use NeoForge **26.1.2.122 or later** for Minecraft 26.1.2. See the [GSTweaks wiki](https://github.com/steefan1998/GSTweaks/wiki) for installation, settings, and mod compatibility.
+
+## What's new in 0.3
+
+- **Tinkers Hard Mode** gives operators a single switch for wooden vanilla tools, Tinker ingredients in modded recipes, and disabling Mekanism and AllTheModium paxel recipes.
+- **Molten Dark Matter and Red Matter** add smelting and casting recipes for Equivox or ProjectE items.
+- **Crude oil unification** lets Oritech, BuildCraft, and Stellaris recipes work with a common base oil. Mekanism supplies the conversion machine when Oritech is absent.
+
 ## Optional compatibility
 
 | Mod | Integration |
@@ -22,7 +30,7 @@ GSTweaks is a NeoForge mod for Minecraft **26.1.2** and Java 25. It registers th
 | FTB Library / FTB Essentials | Adds inventory sidebar buttons for Daily Rewards and the operator-only GSTweaks Options. |
 | Powah and Extended Crafting | GSPack's KubeJS scripts skip individual recipes when a required mod or ingredient is missing. |
 
-The [molten materials list](src/main/resources/molten-materials.json) shows which fluids GSTweaks adds. Each fluid is registered when Tinkers and the corresponding material mod are installed. Existing melting recipes take precedence, and a casting recipe is added when a matching ore and output are available. These fluids are intended for tanks and casting tables.
+The [molten materials list](src/main/resources/molten-materials.json) shows which fluids GSTweaks adds. Each fluid is registered when Tinkers and the corresponding material mod are installed. Existing melting recipes take precedence. Ore-based casting needs a matching ore and registered output. Dark Matter and Red Matter use refined items directly.
 
 The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/tinkering/materials/stats) define each material's trade-offs. Desh is light and fast, boron trades speed for durability, and novite deals relatively high damage with less durability than titanium.
 
@@ -77,10 +85,14 @@ GSTweaks creates `config/gstweaks/gstweaks.json` on first launch. Changes take e
 | `thaumaturgeCompat` | Enables additional scans and material aspects. |
 | `tinkersOreRecipes` | Enables additional melting and casting recipes. |
 | `tinkersToolMaterials` | Enables the new tool part materials and their recipes. |
-| `unifyOil` | On by default. The Oritech Centrifuge with a Fluid Addon converts crude oil to Oritech oil at a 1:1 ratio. Without Oritech, the Mekanism Thermal Evaporation Plant converts oil at the same ratio, using BuildCraft oil first and Stellaris oil as the fallback. BuildCraft and Stellaris crude oil recipes also accept the selected base oil. |
-| `woodenToolsOnly` | Off by default. Keeps the wooden vanilla recipes for pickaxes, axes, shovels, hoes, swords, and spears. Removes recipes for those items from stone through netherite and for Mekanism and AllTheModium paxels. Modded recipes that specify one of these vanilla tools as a crafting ingredient use the corresponding Continuum Tinker tool. |
+| `unifyOil` | On by default. Converts supported crude oils to a [common base oil](https://github.com/steefan1998/GSTweaks/wiki/Mod-Compatibility#crude-oil-unification). |
+| `woodenToolsOnly` | Off by default. Enables Tinkers Hard Mode and requires Continuum Tinker. |
 
-Operators can open **GSTweaks Options** with `/gstweaks options` or the FTB inventory sidebar. The **Tinkers Hard Mode** setting also works from the server console with `gstweaks options wooden_tools_only true`. Use `false` to restore the recipes. Each change saves to `config/gstweaks/gstweaks.json` and reloads the server recipes immediately. The game or server may briefly freeze during the reload.
+### Tinkers Hard Mode
+
+Hard Mode keeps the wooden vanilla recipes for pickaxes, axes, shovels, hoes, swords, and spears. It removes recipes for those items from stone through netherite, including smithing upgrades, and blocks Mekanism and AllTheModium paxel recipes. Supported modded recipes that ask for a vanilla tool use the corresponding Continuum Tinker tool by type.
+
+Operators can open **GSTweaks Options** with `/gstweaks options` or the FTB inventory sidebar. Run `/gstweaks options wooden_tools_only true` to enable Hard Mode or use `false` to restore the recipes. Omit the slash in the server console. The command saves the setting and reloads server recipes immediately. The game or server may briefly freeze during the reload.
 
 ## Daily Rewards
 
