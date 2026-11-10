@@ -1,6 +1,7 @@
 package nl.gstweaks;
 
 import com.google.gson.JsonElement;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import net.minecraft.resources.Identifier;
@@ -29,6 +30,12 @@ final class ToolProgression {
         if (GSTweaksConfig.get().woodenToolsOnly) {
             event.getRecipeJsons().entrySet().removeIf(entry -> producesBlockedTool(entry.getValue()));
             event.getRecipeJsons().forEach(ToolProgression::replaceRecipeInputs);
+        }
+        if (GSTweaks.loaded("justdirethings")) {
+            if (!GSTweaksConfig.get().woodenToolsOnly) {
+                event.getRecipeJsons().forEach(ToolProgression::addDireUpgradePickaxes);
+            }
+            JustDireThingsCompat.addModifiers(event);
         }
     }
 
@@ -106,6 +113,22 @@ final class ToolProgression {
             }
             var value = entry.getValue();
             var replacement = replaceTool(value);
+            // Item IDs inside typed ingredient records are not full ingredient values.
+            if (fields == INGREDIENT_PAYLOAD_FIELDS && replacement.isJsonObject()
+                    && Set.of("id", "item", "items").contains(entry.getKey())) {
+                continue;
+            }
+            if (fields == INGREDIENT_PAYLOAD_FIELDS && entry.getKey().equals("items") && value instanceof JsonArray items) {
+                for (int index = 0; index < items.size(); index++) {
+                    var item = items.get(index);
+                    var itemReplacement = replaceTool(item);
+                    if (itemReplacement != item && itemReplacement.isJsonPrimitive()) {
+                        items.set(index, itemReplacement);
+                        changed = true;
+                    }
+                }
+                continue;
+            }
             if (replacement != value) {
                 entry.setValue(replacement);
                 changed = true;
@@ -142,10 +165,44 @@ final class ToolProgression {
         if (id != null) {
             var matcher = VANILLA_TOOL.matcher(id);
             if (matcher.matches()) {
+                if (matcher.group(2).equals("pickaxe")) {
+                    return tieredPickaxe(matcher.group(1));
+                }
                 return new JsonPrimitive(TINKER_TOOLS.get(matcher.group(2)));
             }
         }
         return element;
+    }
+
+    private static void addDireUpgradePickaxes(Identifier id, JsonElement element) {
+        if (!id.getNamespace().equals("justdirethings") || !id.getPath().startsWith("upgrade_")
+                || !(element instanceof JsonObject recipe) || !(recipe.get("key") instanceof JsonObject key)) {
+            return;
+        }
+        for (var entry : key.entrySet()) {
+            var value = entry.getValue();
+            var replacement = replaceTool(value);
+            if (replacement != value && replacement.isJsonObject()) {
+                var alternatives = new JsonArray();
+                alternatives.add(value);
+                alternatives.add(replacement);
+                var compound = new JsonObject();
+                compound.addProperty("neoforge:ingredient_type", "neoforge:compound");
+                compound.add("children", alternatives);
+                entry.setValue(compound);
+            }
+        }
+    }
+
+    private static JsonObject tieredPickaxe(String vanillaMaterial) {
+        String minimum = switch (vanillaMaterial) {
+            case "wooden", "golden" -> "wood";
+            default -> vanillaMaterial;
+        };
+        var ingredient = new JsonObject();
+        ingredient.addProperty("neoforge:ingredient_type", MiningTierIngredient.ID);
+        ingredient.addProperty("minimum", "minecraft:" + minimum);
+        return ingredient;
     }
 
     private static String string(JsonElement element) {

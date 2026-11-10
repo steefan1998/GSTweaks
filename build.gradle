@@ -25,7 +25,7 @@ neoForge {
 def compatJars = providers.gradleProperty('packMods').map { directory ->
     fileTree(directory) {
         include 'allthemodium-*.jar', 'stellaris-*.jar', 'architectury-*.jar', 'potentials-*.jar',
-                'jei-*.jar', 'thaumaturge-*.jar'
+                'jei-*.jar', 'thaumaturge-*.jar', 'ContinuumConstruct-*.jar', 'ContinuumCore-*.jar'
     }
 }
 dependencies {

@@ -119,6 +119,7 @@ public final class GSTweaks {
             NeoForge.EVENT_BUS.addListener(TinkersRecipes::addRecipes);
         }
         if (hasTinkers) {
+            MiningTierIngredient.register(modBus);
             ToolSmithingRecipe.register(modBus);
             NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, ToolProgression::apply);
             GSTweaksOptions.register(modBus);

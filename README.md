@@ -90,9 +90,13 @@ GSTweaks creates `config/gstweaks/gstweaks.json` on first launch. Changes take e
 
 ### Tinkers Hard Mode
 
-Hard Mode keeps the wooden vanilla recipes for pickaxes, axes, shovels, hoes, swords, and spears. It removes recipes for those items from stone through netherite, including smithing upgrades, and blocks Mekanism and AllTheModium paxel recipes. Supported modded recipes that ask for a vanilla tool use the corresponding Continuum Tinker tool by type.
+Hard Mode keeps the wooden vanilla recipes for pickaxes, axes, shovels, hoes, swords, and spears. It removes recipes for those items from stone through netherite, including smithing upgrades, and blocks Mekanism and AllTheModium paxel recipes. Supported modded recipes that ask for a vanilla tool use the corresponding Continuum Tinker tool by type. A replacement pickaxe must meet the original mining tier or higher. For example, the BuildCraft Quarry requires a diamond-tier or better Tinker pickaxe.
 
 Operators can open **GSTweaks Options** with `/gstweaks options` or the FTB inventory sidebar. Run `/gstweaks options wooden_tools_only true` to enable Hard Mode or use `false` to restore the recipes. Omit the slash in the server console. The command saves the setting and reloads server recipes immediately. The game or server may briefly freeze during the reload.
+
+### JustDireThings compatibility
+
+With JustDireThings and Continuum Tinker installed, use the JustDireThings Smelter, Glowing, or Hammer upgrade in a Tinker Station to apply Autosmelt, Glowing, or Expanded respectively. The Continuum Tinker modifier's tool restrictions and slot cost apply. JustDireThings upgrade recipes that call for a pickaxe accept a Tinker pickaxe of the required mining tier. With Hard Mode off, those recipes also accept their original vanilla pickaxe.
 
 ## Daily Rewards
 
@@ -121,7 +125,7 @@ Other pack features, including quest detection, mastery, EMC, and client setting
 
 ## Building
 
-Use JDK 25 and point `packMods` at the directory containing the local compile-time jars for Stellaris, Architectury, Potentials, AllTheModium, JEI, and Thaumaturge. The build keeps those jars separate from GSTweaks.
+Use JDK 25 and point `packMods` at the directory containing the local compile-time jars for Stellaris, Architectury, Potentials, AllTheModium, JEI, Thaumaturge, Continuum Construct, and Continuum Core. The build keeps those jars separate from GSTweaks.
 
 ```powershell
 .\gradlew.bat build '-PpackMods=D:/path/to/GSPack/mods'
