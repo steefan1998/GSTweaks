@@ -1,0 +1,28 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "equivox"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "projecte"
+          }
+        ]
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "gstweaks:compat/red_matter"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 4
+}

@@ -123,6 +123,9 @@ public final class GSTweaks {
             ToolSmithingRecipe.register(modBus);
             NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, ToolProgression::apply);
             GSTweaksOptions.register(modBus);
+            if (loaded("allthemodium")) {
+                TinkersModiumMining.register();
+            }
         }
         if (loaded("stellaris")) {
             new MarsEvents().register();

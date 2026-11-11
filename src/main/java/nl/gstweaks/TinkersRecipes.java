@@ -69,6 +69,10 @@ final class TinkersRecipes {
             if (material.oreAmount() == 0) {
                 if (settings.tinkersOreRecipes) {
                     addCasting(event, material, output);
+                }
+                if (toolParts) {
+                    addToolParts(event, material, output, existing);
+                } else if (settings.tinkersOreRecipes) {
                     addProductMelting(event, material, output, existing, "melting/");
                 }
                 continue;

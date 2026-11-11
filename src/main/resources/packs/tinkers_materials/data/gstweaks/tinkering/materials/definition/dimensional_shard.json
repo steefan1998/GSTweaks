@@ -1,0 +1,32 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:mod_loaded",
+        "modid": "rftoolsbase"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/dimensional_shard"
+      },
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "mantle:tag_filled",
+            "tag": "c:gems/dimensional_shard"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "rftoolsbase:dimensionalshard"
+          }
+        ]
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 3
+}
