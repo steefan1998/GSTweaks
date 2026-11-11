@@ -1,0 +1,41 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mysticalagriculture"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mysticalagradditions"
+          }
+        ]
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/prosperity"
+      },
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "mantle:tag_filled",
+            "tag": "c:gems/prosperity"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "mysticalagriculture:prosperity_shard"
+          }
+        ]
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 2
+}

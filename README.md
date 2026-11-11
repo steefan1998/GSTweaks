@@ -22,19 +22,19 @@ Use NeoForge **26.1.2.122 or later** for Minecraft 26.1.2. See the [GSTweaks wik
 | --- | --- |
 | Stellaris | Expands `stellaris:mars` with biomes, dungeons, villages, camps, mobs, and oxygen systems. |
 | AllTheOres | Adds Martian osmium and uranium, their ore drops, and optional duplicate ore unification. |
-| AllTheModium | Adds Martian unobtainium with its original mining protection, XP, and drop. |
+| AllTheModium | Adds Martian unobtainium with its original mining protection, XP, and drop. With Tinkers, a Tinker tool of netherite tier or higher, for example after the netherite upgrade, can mine Allthemodium ores. Vibranium and unobtainium still need their own tiers. |
 | Mekanism Additions | Adds Baby Creepers on Mars and in the research dome. The dome has a regular Creeper when Mekanism Additions is absent. |
 | JEI | Hides configured material duplicates when the preferred variant is available. |
 | Thaumaturge | Adds material aspects for common tags and lets the Thaumometer record modded blocks that have no aspects. |
-| Tinkers’ Construct / Continuum Construct | Adds missing melting recipes and 29 optional molten materials. Eighteen materials have their own stats for heads, handles, and bindings, along with casting, repair, and recycling recipes. |
+| Tinkers’ Construct / Continuum Construct | Adds missing melting recipes and 29 optional molten materials. Every material has its own stats for heads, handles, and bindings, along with casting, repair, and recycling recipes. |
 | FTB Library / FTB Essentials | Adds inventory sidebar buttons for Daily Rewards and the operator-only GSTweaks Options. |
 | Powah and Extended Crafting | GSPack's KubeJS scripts skip individual recipes when a required mod or ingredient is missing. |
 
 The [molten materials list](src/main/resources/molten-materials.json) shows which fluids GSTweaks adds. Each fluid is registered when Tinkers and the corresponding material mod are installed. Existing melting recipes take precedence. Ore-based casting needs a matching ore and registered output. Dark Matter and Red Matter use refined items directly.
 
-The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/tinkering/materials/stats) define each material's trade-offs. Desh is light and fast, boron trades speed for durability, and novite deals relatively high damage with less durability than titanium.
+The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/tinkering/materials/stats) define each material's trade-offs. Desh is light and fast, boron trades speed for durability, and novite deals relatively high damage with less durability than titanium. Salt, saltpeter, and sulfur are cheap, stone-tier materials. Dark Matter and Red Matter are the strongest.
 
-With Equivox or ProjectE, one Dark Matter or Red Matter item melts into 100 mB. A reusable gem cast turns 100 mB back into one item. If both mods are present, the recipes use Equivox items. The ProjectE integration recognizes the original item IDs. GSTweaks builds target Minecraft 26.1.2.
+With Equivox or ProjectE, one Dark Matter or Red Matter item melts into 100 mB. Dark Matter melts at 1100 °C and Red Matter at 1200 °C. Both are netherite-tier tool materials. A reusable gem cast turns 100 mB back into one item. If both mods are present, the recipes use Equivox items. The ProjectE integration recognizes the original item IDs. GSTweaks builds target Minecraft 26.1.2.
 
 ## Migrating from GSPack
 

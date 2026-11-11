@@ -1,0 +1,32 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "alltheores"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "thaumaturge"
+          }
+        ]
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/cinnabar"
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:gems/cinnabar"
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 2
+}

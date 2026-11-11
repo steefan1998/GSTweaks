@@ -49,7 +49,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 800,
-    "color": 7528033
+    "color": 7528033,
+    "toolMaterial": true
   },
   {
     "name": "cinnabar",
@@ -62,7 +63,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 800,
-    "color": 15289670
+    "color": 15289670,
+    "toolMaterial": true
   },
   {
     "name": "dark_gem",
@@ -102,7 +104,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 800,
-    "color": 7726532
+    "color": 7726532,
+    "toolMaterial": true
   },
   {
     "name": "fluorite",
@@ -156,7 +159,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 800,
-    "color": 9088069
+    "color": 9088069,
+    "toolMaterial": true
   },
   {
     "name": "iridium",
@@ -235,7 +239,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 800,
-    "color": 12708320
+    "color": 12708320,
+    "toolMaterial": true
   },
   {
     "name": "replica",
@@ -274,7 +279,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 650,
-    "color": 15390410
+    "color": 15390410,
+    "toolMaterial": true
   },
   {
     "name": "saltpeter",
@@ -287,7 +293,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 650,
-    "color": 14801070
+    "color": 14801070,
+    "toolMaterial": true
   },
   {
     "name": "sapphire",
@@ -327,7 +334,8 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 650,
-    "color": 15125318
+    "color": 15125318,
+    "toolMaterial": true
   },
   {
     "name": "titanium",
@@ -350,8 +358,9 @@
     "cast": "gem",
     "amount": 100,
     "oreAmount": 0,
-    "temperature": 900,
-    "color": 7557531
+    "temperature": 1100,
+    "color": 7557531,
+    "toolMaterial": true
   },
   {
     "name": "red_matter",
@@ -360,8 +369,9 @@
     "cast": "gem",
     "amount": 100,
     "oreAmount": 0,
-    "temperature": 1000,
-    "color": 15152195
+    "temperature": 1200,
+    "color": 15152195,
+    "toolMaterial": true
   },
   {
     "name": "uraninite",
@@ -374,6 +384,7 @@
     "amount": 100,
     "oreAmount": 100,
     "temperature": 650,
-    "color": 9089115
+    "color": 9089115,
+    "toolMaterial": true
   }
 ]

@@ -1,0 +1,41 @@
+{
+  "condition": {
+    "type": "neoforge:and",
+    "values": [
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mysticalagriculture"
+          },
+          {
+            "type": "neoforge:mod_loaded",
+            "modid": "mysticalagradditions"
+          }
+        ]
+      },
+      {
+        "type": "mantle:tag_filled",
+        "tag": "c:ores/inferium"
+      },
+      {
+        "type": "neoforge:or",
+        "values": [
+          {
+            "type": "mantle:tag_filled",
+            "tag": "c:gems/inferium"
+          },
+          {
+            "type": "neoforge:item_exists",
+            "item": "mysticalagriculture:inferium_essence"
+          }
+        ]
+      }
+    ]
+  },
+  "craftable": false,
+  "hidden": false,
+  "sortOrder": 20,
+  "tier": 2
+}
