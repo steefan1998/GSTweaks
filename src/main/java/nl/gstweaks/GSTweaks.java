@@ -111,6 +111,9 @@ public final class GSTweaks {
             NeoForge.EVENT_BUS.addListener(EndgameTooltips::add);
         }
         Unification.register();
+        if (loaded("ftblibrary") && loaded("weatherstory")) {
+            WeatherStoryCompat.register();
+        }
         if (settings.unifyOil && (loaded("oritech") || loaded("mekanism"))) {
             NeoForge.EVENT_BUS.addListener(OilUnification::addRecipes);
         }

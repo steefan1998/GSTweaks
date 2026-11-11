@@ -28,6 +28,7 @@ Use NeoForge **26.1.2.122 or later** for Minecraft 26.1.2. See the [GSTweaks wik
 | Thaumaturge | Adds material aspects for common tags and lets the Thaumometer record modded blocks that have no aspects. |
 | Tinkers’ Construct / Continuum Construct | Adds missing melting recipes and 29 optional molten materials. Every material has its own stats for heads, handles, and bindings, along with casting, repair, and recycling recipes. |
 | FTB Library / FTB Essentials | Adds inventory sidebar buttons for Daily Rewards and the operator-only GSTweaks Options. |
+| FTB Library + Weather Story | Makes the FTB rain button toggle local rain and temporarily clear weather in dimensions managed by Weather Story. |
 | Powah and Extended Crafting | GSPack's KubeJS scripts skip individual recipes when a required mod or ingredient is missing. |
 
 The [molten materials list](src/main/resources/molten-materials.json) shows which fluids GSTweaks adds. Each fluid is registered when Tinkers and the corresponding material mod are installed. Existing melting recipes take precedence. Ore-based casting needs a matching ore and registered output. Dark Matter and Red Matter use refined items directly.
@@ -39,7 +40,7 @@ With Equivox or ProjectE, one Dark Matter or Red Matter item melts into 100 mB. 
 ## Migrating from GSPack
 
 1. Close Minecraft or stop the server. Make a copy of the instance and the world.
-2. Place `GSTweaks-0.3.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
+2. Place `GSTweaks-0.3.1.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
 3. Start the client and server. GSTweaks archives recognized legacy files before KubeJS reads them. The converter installs updated recipes and stops if it finds customized files that need to be merged manually.
 
 Automatic backups are stored in `gstweaks-backup/kubejs-*/kubejs`. To roll back, use the original world copy, restore the archived files, and remove the new jar and the files listed in `created-files.json`.
@@ -125,10 +126,10 @@ Other pack features, including quest detection, mastery, EMC, and client setting
 
 ## Building
 
-Use JDK 25 and point `packMods` at the directory containing the local compile-time jars for Stellaris, Architectury, Potentials, AllTheModium, JEI, Thaumaturge, Continuum Construct, and Continuum Core. The build keeps those jars separate from GSTweaks.
+Use JDK 25 and point `packMods` at the directory containing the local compile-time jars for Stellaris, Architectury, Potentials, AllTheModium, JEI, Thaumaturge, Continuum Construct, Continuum Core, and Weather Story. The build keeps those jars separate from GSTweaks.
 
 ```powershell
 .\gradlew.bat build '-PpackMods=D:/path/to/GSPack/mods'
 ```
 
-The build produces `build/libs/GSTweaks-0.3.jar`.
+The build produces `build/libs/GSTweaks-0.3.1.jar`.

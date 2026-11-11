@@ -4,7 +4,7 @@ license="MIT"
 
 [[mods]]
 modId="gstweaks"
-version="0.3"
+version="0.3.1"
 displayName="GSTweaks"
 authors="Steef_an & ChatGPT Codex"
 logoFile="gspack-logo.png"

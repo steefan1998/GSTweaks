@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 
-version = '0.3'
+version = '0.3.1'
 group = 'nl.gstweaks'
 base.archivesName = 'GSTweaks'
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
@@ -25,7 +25,8 @@ neoForge {
 def compatJars = providers.gradleProperty('packMods').map { directory ->
     fileTree(directory) {
         include 'allthemodium-*.jar', 'stellaris-*.jar', 'architectury-*.jar', 'potentials-*.jar',
-                'jei-*.jar', 'thaumaturge-*.jar', 'ContinuumConstruct-*.jar', 'ContinuumCore-*.jar'
+                'jei-*.jar', 'thaumaturge-*.jar', 'ContinuumConstruct-*.jar', 'ContinuumCore-*.jar',
+                'weatherstory-*.jar'
     }
 }
 dependencies {
