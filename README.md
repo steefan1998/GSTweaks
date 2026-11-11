@@ -37,23 +37,17 @@ The [tool part stats](src/main/resources/packs/tinkers_materials/data/gstweaks/t
 
 With Equivox or ProjectE, one Dark Matter or Red Matter item melts into 100 mB. Dark Matter melts at 1100 °C and Red Matter at 1200 °C. Both are netherite-tier tool materials. A reusable gem cast turns 100 mB back into one item. If both mods are present, the recipes use Equivox items. The ProjectE integration recognizes the original item IDs. GSTweaks builds target Minecraft 26.1.2.
 
-## Migrating from GSPack
+## Installing or upgrading GSTweaks
 
 1. Close Minecraft or stop the server. Make a copy of the instance and the world.
-2. Place `GSTweaks-0.3.1.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
-3. Start the client and server. GSTweaks archives recognized legacy files before KubeJS reads them. The converter installs updated recipes and stops if it finds customized files that need to be merged manually.
+2. Place `GSTweaks-0.3.2.jar` in the copy's `mods` folder. Remove any older GSTweaks jar from that folder.
+3. Start the client and server and check that the instance loads.
 
-Automatic backups are stored in `gstweaks-backup/kubejs-*/kubejs`. To roll back, use the original world copy, restore the archived files, and remove the new jar and the files listed in `created-files.json`.
-
-Run this command from the project directory to preview the migration.
-
-```powershell
-.\migration\Install-GSTweaks.ps1 -Instance 'D:\path\to\GSPack-copy'
-```
+Starting with 0.3.2, manage KubeJS scripts through your modpack. For an older GSPack instance that still uses legacy KubeJS registrations, see the [0.3.1 migration instructions](https://github.com/steefan1998/GSTweaks/blob/8bfb2111ae4ec0760bce44556254833da0dd7e96/README.md#migrating-from-gspack).
 
 The mod ID is `gstweaks`. Registry IDs such as `gspack:tech_core`, `gspack:infinity_trophy`, and `stellaris:mars` stay the same. GSTweaks converts legacy Mars ores as chunks load. Existing settings in `config/gspack-mars.json` still apply.
 
-If an older custom version used different item or block IDs, add aliases to `config/gstweaks-id-aliases.json` on both the client and server. Only use legacy IDs that are available after the migration.
+If an older custom version used different item or block IDs, add aliases to `config/gstweaks-id-aliases.json` on both the client and server. Use only legacy IDs that are no longer registered.
 
 ```json
 {
@@ -79,7 +73,6 @@ GSTweaks creates `config/gstweaks/gstweaks.json` on first launch. Changes take e
 
 | Setting | Effect |
 | --- | --- |
-| `autoMigrateKubeJs` | Runs the KubeJS converter when the mod loads. |
 | `endgameTooltips` | Shows additional information on the Cores and Trophy. |
 | `migrateMarsOres` | Replaces legacy Mars ores as chunks load. |
 | `marsZombieSuit`, `marsRaidPillagers`, `marsVillageLifeSupport` | Controls each Mars feature independently. |
@@ -118,11 +111,9 @@ Server settings are stored in `config/gstweaks/daily-rewards.json`.
 | `experience` | `30` | XP points per claim. |
 | `rewards` | 2 gold ingots and 4 bread | List of objects with an `item` ID and a `count`. |
 
-## What the converter migrates
+## GSPack scripts
 
-The converter moves legacy registrations, tooltips, Mars assets and behavior, material conversion, and Thaumaturge scans and material aspects into GSTweaks. The Core and Trophy recipes, `gspack_crossmod_recipes.js`, the Thaumaturge recipe guard, and recipe unification remain in KubeJS. GSTweaks handles Tinkers melting, casting, and tool part recipes. For a new KubeJS instance, copy the pack recipes you want from `migration/kubejs/server_scripts`.
-
-Other pack features, including quest detection, mastery, EMC, and client settings, still run in KubeJS.
+GSPack supplies its Core and Trophy recipes, cross-mod recipes, Thaumaturge recipe guard, and recipe unification through KubeJS. GSTweaks handles Tinkers melting, casting, and tool part recipes. Other GSPack features, including quest detection, mastery, EMC, and client settings, also use KubeJS.
 
 ## Building
 
@@ -132,4 +123,4 @@ Use JDK 25 and point `packMods` at the directory containing the local compile-ti
 .\gradlew.bat build '-PpackMods=D:/path/to/GSPack/mods'
 ```
 
-The build produces `build/libs/GSTweaks-0.3.1.jar`.
+The build produces `build/libs/GSTweaks-0.3.2.jar`.

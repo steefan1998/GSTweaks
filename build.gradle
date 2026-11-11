@@ -3,7 +3,7 @@ plugins {
     id 'net.neoforged.moddev' version '2.0.148'
 }
 
-version = '0.3.1'
+version = '0.3.2'
 group = 'nl.gstweaks'
 base.archivesName = 'GSTweaks'
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
@@ -37,8 +37,4 @@ tasks.withType(JavaCompile).configureEach {
 }
 tasks.named('processResources', ProcessResources) {
     from('LICENSE', 'TEMPLATE_LICENSE.txt')
-    from('migration') {
-        include 'files.json', 'kubejs/**'
-        into 'migration'
-    }
 }

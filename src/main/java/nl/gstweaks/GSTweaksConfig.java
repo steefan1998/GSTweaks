@@ -13,7 +13,6 @@ import java.nio.file.StandardCopyOption;
 import java.nio.file.StandardOpenOption;
 
 final class GSTweaksConfig {
-    boolean autoMigrateKubeJs = true;
     boolean endgameTooltips = true;
     boolean migrateMarsOres = true;
     boolean marsZombieSuit = true;

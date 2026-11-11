@@ -97,9 +97,6 @@ public final class GSTweaks {
                     + "Install it or disable woodenToolsOnly in config/gstweaks/gstweaks.json.");
         }
         UnificationConfig.get();
-        if (settings.autoMigrateKubeJs) {
-            KubeJsMigration.run();
-        }
         MoltenMaterials.register(modBus);
         DailyRewards.register(modBus);
         IdMigration.registerAliases();
